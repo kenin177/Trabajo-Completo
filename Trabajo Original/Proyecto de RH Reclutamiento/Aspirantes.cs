@@ -16,11 +16,9 @@ namespace Proyecto_de_RH_Reclutamiento
         public Aspirantes()
         {
             InitializeComponent();
-
         }
         public void cargarDatos(AspirantesBL aspirantesBL, TituloBL tituloBL, AreaBL areaBL)
         {
-
             listaDeAspirantesBindingSource.DataSource = aspirantesBL.ListaDeAspirantes;
             listaDeTitulosBindingSource.DataSource = tituloBL.ListaDeTitulos;
             listaDeAreasBindingSource.DataSource = areaBL.ListaDeAreas;

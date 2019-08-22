@@ -34,6 +34,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Puesto));
             this.listaDePuestosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.listaDePuestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -51,13 +52,12 @@
             this.listaDePuestosDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listaDePuestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             descripcionLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosBindingNavigator)).BeginInit();
             this.listaDePuestosBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // descripcionLabel
@@ -116,6 +116,10 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // listaDePuestosBindingSource
+            // 
+            this.listaDePuestosBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Puesto);
             // 
             // bindingNavigatorCountItem
             // 
@@ -221,7 +225,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 52);
+            this.label1.Location = new System.Drawing.Point(12, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 20);
             this.label1.TabIndex = 6;
@@ -256,10 +260,6 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 65;
             // 
-            // listaDePuestosBindingSource
-            // 
-            this.listaDePuestosBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Puesto);
-            // 
             // Puesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,8 +278,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosBindingNavigator)).EndInit();
             this.listaDePuestosBindingNavigator.ResumeLayout(false);
             this.listaDePuestosBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

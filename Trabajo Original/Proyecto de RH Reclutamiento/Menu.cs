@@ -17,8 +17,7 @@ namespace Proyecto_de_RH_Reclutamiento
         TituloBL _tituloBL;
         AreaBL _areaBL;
         PuestoBL _puestoBL;
-        private object formPuesto;
-
+        
         public Menu()
         {
             InitializeComponent();
