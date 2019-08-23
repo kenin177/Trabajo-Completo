@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_de_RH_Reclutamiento
 {
-    partial class Menu
+    partial class FrmMenu
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -73,29 +73,30 @@
             // areasToolStripMenuItem
             // 
             this.areasToolStripMenuItem.Name = "areasToolStripMenuItem";
-            this.areasToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.areasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.areasToolStripMenuItem.Text = "Areas";
             this.areasToolStripMenuItem.Click += new System.EventHandler(this.areasToolStripMenuItem_Click);
             // 
             // puestosToolStripMenuItem
             // 
             this.puestosToolStripMenuItem.Name = "puestosToolStripMenuItem";
-            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.puestosToolStripMenuItem.Text = "Puestos";
             this.puestosToolStripMenuItem.Click += new System.EventHandler(this.puestosToolStripMenuItem_Click);
             // 
             // aspiranteToolStripMenuItem
             // 
             this.aspiranteToolStripMenuItem.Name = "aspiranteToolStripMenuItem";
-            this.aspiranteToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.aspiranteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aspiranteToolStripMenuItem.Text = "Aspirante";
             this.aspiranteToolStripMenuItem.Click += new System.EventHandler(this.aspiranteToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.salirToolStripMenuItem.Text = "Salir ";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // transaccionesToolStripMenuItem
             // 
@@ -131,13 +132,13 @@
             // puestosToolStripMenuItem1
             // 
             this.puestosToolStripMenuItem1.Name = "puestosToolStripMenuItem1";
-            this.puestosToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
+            this.puestosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.puestosToolStripMenuItem1.Text = "Puestos";
             // 
             // totalToolStripMenuItem
             // 
             this.totalToolStripMenuItem.Name = "totalToolStripMenuItem";
-            this.totalToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.totalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.totalToolStripMenuItem.Text = "Total ";
             // 
             // ayudaToolStripMenuItem
@@ -146,7 +147,7 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // Menu
+            // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,7 +155,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Menu";
+            this.Name = "FrmMenu";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";

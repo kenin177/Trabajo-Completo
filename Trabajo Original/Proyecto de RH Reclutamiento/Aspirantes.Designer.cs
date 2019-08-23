@@ -58,6 +58,9 @@
             this.listaDeTitulosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.listaDeAspirantesDataGridView = new System.Windows.Forms.DataGridView();
+            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,9 +68,6 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             edadLabel = new System.Windows.Forms.Label();
             experienciaLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -341,6 +341,32 @@
             this.listaDeAspirantesDataGridView.Size = new System.Drawing.Size(805, 181);
             this.listaDeAspirantesDataGridView.TabIndex = 20;
             // 
+            // listaDeAreasBindingSource
+            // 
+            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaDeAspirantesBindingSource, "AreaId", true));
+            this.comboBox2.DataSource = this.listaDeAreasBindingSource;
+            this.comboBox2.DisplayMember = "Descripcion";
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(58, 181);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(131, 21);
+            this.comboBox2.TabIndex = 21;
+            this.comboBox2.ValueMember = "Id";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 184);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Area:";
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -369,7 +395,6 @@
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "TituloId";
             this.dataGridViewTextBoxColumn6.DataSource = this.listaDeTitulosBindingSource;
             this.dataGridViewTextBoxColumn6.DisplayMember = "Descripcion";
@@ -378,7 +403,7 @@
             this.dataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewTextBoxColumn6.ValueMember = "Id";
-            this.dataGridViewTextBoxColumn6.Width = 58;
+            this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -390,7 +415,6 @@
             // 
             // dataGridViewTextBoxColumn8
             // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn8.DataPropertyName = "AreaId";
             this.dataGridViewTextBoxColumn8.DataSource = this.listaDeAreasBindingSource;
             this.dataGridViewTextBoxColumn8.DisplayMember = "Descripcion";
@@ -399,33 +423,7 @@
             this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewTextBoxColumn8.ValueMember = "Id";
-            this.dataGridViewTextBoxColumn8.Width = 54;
-            // 
-            // listaDeAreasBindingSource
-            // 
-            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaDeAspirantesBindingSource, "AreaId", true));
-            this.comboBox2.DataSource = this.listaDeAreasBindingSource;
-            this.comboBox2.DisplayMember = "Descripcion";
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(58, 181);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(131, 21);
-            this.comboBox2.TabIndex = 21;
-            this.comboBox2.ValueMember = "Id";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 184);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Area:";
+            this.dataGridViewTextBoxColumn8.Width = 120;
             // 
             // Aspirantes
             // 
