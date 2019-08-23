@@ -82,5 +82,13 @@ namespace Proyecto_de_RH_Reclutamiento
         {
             FrmMenu.ActiveForm.Close();
         }
+
+        private void acercaDeRecursosHumanosReclutamientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FrmAyuda frm = new FrmAyuda();
+
+            frm.Show();
+        }
     }
 }

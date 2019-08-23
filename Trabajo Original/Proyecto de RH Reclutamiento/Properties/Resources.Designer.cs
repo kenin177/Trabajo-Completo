@@ -74,6 +74,26 @@ namespace Proyecto_de_RH_Reclutamiento.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Acerca_De {
+            get {
+                object obj = ResourceManager.GetObject("Acerca De", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Acerca_De1 {
+            get {
+                object obj = ResourceManager.GetObject("Acerca De1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap apps_recursos_humanos {
             get {
                 object obj = ResourceManager.GetObject("apps-recursos-humanos", resourceCulture);

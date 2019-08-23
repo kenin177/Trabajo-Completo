@@ -58,6 +58,12 @@
     <Compile Include="Aspirantes.Designer.cs">
       <DependentUpon>Aspirantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAyuda.Designer.cs">
+      <DependentUpon>FrmAyuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modelos\Area.cs" />
     <Compile Include="Modelos\Aspirantes.cs" />
     <Compile Include="Area.cs">
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aspirantes.resx">
       <DependentUpon>Aspirantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAyuda.resx">
+      <DependentUpon>FrmAyuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -147,7 +156,12 @@
   <ItemGroup>
     <None Include="Resources\aprendizajes_rrhh1.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Acerca De.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acerca De1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

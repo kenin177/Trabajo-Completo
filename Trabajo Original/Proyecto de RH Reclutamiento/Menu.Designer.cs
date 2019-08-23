@@ -35,15 +35,16 @@
             this.aspiranteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proximamenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rrporteDeAspirantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeAreaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.puestosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.totalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.verLaAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,21 +79,21 @@
             // areasToolStripMenuItem
             // 
             this.areasToolStripMenuItem.Name = "areasToolStripMenuItem";
-            this.areasToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.areasToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.areasToolStripMenuItem.Text = "Areas";
             this.areasToolStripMenuItem.Click += new System.EventHandler(this.areasToolStripMenuItem_Click);
             // 
             // puestosToolStripMenuItem
             // 
             this.puestosToolStripMenuItem.Name = "puestosToolStripMenuItem";
-            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.puestosToolStripMenuItem.Text = "Puestos";
             this.puestosToolStripMenuItem.Click += new System.EventHandler(this.puestosToolStripMenuItem_Click);
             // 
             // aspiranteToolStripMenuItem
             // 
             this.aspiranteToolStripMenuItem.Name = "aspiranteToolStripMenuItem";
-            this.aspiranteToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.aspiranteToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.aspiranteToolStripMenuItem.Text = "Aspirante";
             this.aspiranteToolStripMenuItem.Click += new System.EventHandler(this.aspiranteToolStripMenuItem_Click);
             // 
@@ -101,15 +102,23 @@
             this.salirToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.salirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.salirToolStripMenuItem.Text = "Salir ";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // transaccionesToolStripMenuItem
             // 
+            this.transaccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.proximamenteToolStripMenuItem});
             this.transaccionesToolStripMenuItem.Name = "transaccionesToolStripMenuItem";
             this.transaccionesToolStripMenuItem.Size = new System.Drawing.Size(106, 23);
             this.transaccionesToolStripMenuItem.Text = "Transacciones";
+            // 
+            // proximamenteToolStripMenuItem
+            // 
+            this.proximamenteToolStripMenuItem.Name = "proximamenteToolStripMenuItem";
+            this.proximamenteToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.proximamenteToolStripMenuItem.Text = "Proximamente";
             // 
             // reporteToolStripMenuItem
             // 
@@ -157,15 +166,6 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(60, 23);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 48);
-            this.label1.TabIndex = 2;
-            // 
             // verLaAyudaToolStripMenuItem
             // 
             this.verLaAyudaToolStripMenuItem.Name = "verLaAyudaToolStripMenuItem";
@@ -177,6 +177,16 @@
             this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem.Name = "acercaDeRecursosHumanosReclutamientoToolStripMenuItem";
             this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem.Size = new System.Drawing.Size(351, 24);
             this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem.Text = "Acerca de Recursos Humanos/Reclutamiento";
+            this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem.Click += new System.EventHandler(this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(73, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 48);
+            this.label1.TabIndex = 2;
             // 
             // FrmMenu
             // 
@@ -222,6 +232,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem verLaAyudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeRecursosHumanosReclutamientoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proximamenteToolStripMenuItem;
     }
 }
 
