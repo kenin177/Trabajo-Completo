@@ -18,12 +18,14 @@ namespace Proyecto_de_RH_Reclutamiento
             InitializeComponent();
 
         }
-        public void cargarDatos(AspirantesBL aspirantesBL, TituloBL tituloBL, AreaBL areaBL)
+        public void cargarDatos(AspirantesBL aspirantesBL, TituloBL tituloBL, AreaBL areaBL, NivelInglesBL nivelInglesBL)
         {
 
             listaDeAspirantesBindingSource.DataSource = aspirantesBL.ListaDeAspirantes;
             listaDeTitulosBindingSource.DataSource = tituloBL.ListaDeTitulos;
             listaDeAreasBindingSource.DataSource = areaBL.ListaDeAreas;
+            listaDeNivelBindingSource.DataSource = nivelInglesBL.ListaDeNivel;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

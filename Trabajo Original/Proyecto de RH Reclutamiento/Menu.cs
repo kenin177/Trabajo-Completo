@@ -17,7 +17,7 @@ namespace Proyecto_de_RH_Reclutamiento
         TituloBL _tituloBL;
         AreaBL _areaBL;
         PuestoBL _puestoBL;
-        private object formPuesto;
+        NivelInglesBL _nivelInglesBL;
 
         public FrmMenu()
         {
@@ -26,6 +26,8 @@ namespace Proyecto_de_RH_Reclutamiento
             _tituloBL = new TituloBL();
             _areaBL = new AreaBL();
             _puestoBL = new PuestoBL();
+            _nivelInglesBL = new NivelInglesBL();
+
         }
 
         private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace Proyecto_de_RH_Reclutamiento
             var formAspirante = new Aspirantes();
             formAspirante.MdiParent = this;
 
-            formAspirante.cargarDatos(_aspirantesBL, _tituloBL, _areaBL);
+            formAspirante.cargarDatos(_aspirantesBL, _tituloBL, _areaBL, _nivelInglesBL);
             formAspirante.Show();
         }
 

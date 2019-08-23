@@ -42,6 +42,8 @@
             this.totalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.verLaAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,28 +78,30 @@
             // areasToolStripMenuItem
             // 
             this.areasToolStripMenuItem.Name = "areasToolStripMenuItem";
-            this.areasToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.areasToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.areasToolStripMenuItem.Text = "Areas";
             this.areasToolStripMenuItem.Click += new System.EventHandler(this.areasToolStripMenuItem_Click);
             // 
             // puestosToolStripMenuItem
             // 
             this.puestosToolStripMenuItem.Name = "puestosToolStripMenuItem";
-            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.puestosToolStripMenuItem.Text = "Puestos";
             this.puestosToolStripMenuItem.Click += new System.EventHandler(this.puestosToolStripMenuItem_Click);
             // 
             // aspiranteToolStripMenuItem
             // 
             this.aspiranteToolStripMenuItem.Name = "aspiranteToolStripMenuItem";
-            this.aspiranteToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.aspiranteToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.aspiranteToolStripMenuItem.Text = "Aspirante";
             this.aspiranteToolStripMenuItem.Click += new System.EventHandler(this.aspiranteToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.salirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.salirToolStripMenuItem.Text = "Salir ";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -146,6 +150,9 @@
             // 
             // ayudaToolStripMenuItem
             // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verLaAyudaToolStripMenuItem,
+            this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(60, 23);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
@@ -158,6 +165,18 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 48);
             this.label1.TabIndex = 2;
+            // 
+            // verLaAyudaToolStripMenuItem
+            // 
+            this.verLaAyudaToolStripMenuItem.Name = "verLaAyudaToolStripMenuItem";
+            this.verLaAyudaToolStripMenuItem.Size = new System.Drawing.Size(351, 24);
+            this.verLaAyudaToolStripMenuItem.Text = "Ver la Ayuda";
+            // 
+            // acercaDeRecursosHumanosReclutamientoToolStripMenuItem
+            // 
+            this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem.Name = "acercaDeRecursosHumanosReclutamientoToolStripMenuItem";
+            this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem.Size = new System.Drawing.Size(351, 24);
+            this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem.Text = "Acerca de Recursos Humanos/Reclutamiento";
             // 
             // FrmMenu
             // 
@@ -201,6 +220,8 @@
         private System.Windows.Forms.ToolStripMenuItem puestosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem totalToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem verLaAyudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acercaDeRecursosHumanosReclutamientoToolStripMenuItem;
     }
 }
 

@@ -67,7 +67,7 @@
             descripcionLabel.AutoSize = true;
             descripcionLabel.BackColor = System.Drawing.Color.Transparent;
             descripcionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descripcionLabel.Location = new System.Drawing.Point(158, 131);
+            descripcionLabel.Location = new System.Drawing.Point(119, 133);
             descripcionLabel.Name = "descripcionLabel";
             descripcionLabel.Size = new System.Drawing.Size(40, 15);
             descripcionLabel.TabIndex = 1;
@@ -78,7 +78,7 @@
             idLabel.AutoSize = true;
             idLabel.BackColor = System.Drawing.Color.Transparent;
             idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idLabel.Location = new System.Drawing.Point(158, 105);
+            idLabel.Location = new System.Drawing.Point(119, 107);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(23, 15);
             idLabel.TabIndex = 3;
@@ -214,7 +214,7 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAreasBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(210, 102);
+            this.idTextBox.Location = new System.Drawing.Point(171, 104);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(47, 20);
             this.idTextBox.TabIndex = 4;
@@ -261,7 +261,7 @@
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAreasBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(210, 131);
+            this.descripcionTextBox.Location = new System.Drawing.Point(171, 133);
             this.descripcionTextBox.Name = "descripcionTextBox";
             this.descripcionTextBox.Size = new System.Drawing.Size(100, 20);
             this.descripcionTextBox.TabIndex = 8;

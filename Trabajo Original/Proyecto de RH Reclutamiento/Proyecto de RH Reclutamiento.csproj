@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BL\AreaBL.cs" />
     <Compile Include="BL\AspirantesBL.cs" />
+    <Compile Include="BL\NivelInglesBL.cs" />
     <Compile Include="BL\PuestoBL.cs" />
     <Compile Include="BL\TituloBL.cs" />
     <Compile Include="Aspirantes.cs">
@@ -71,6 +72,7 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\NivelIngles.cs" />
     <Compile Include="Modelos\Titulo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +107,7 @@
     </EmbeddedResource>
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.AreaBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.AspirantesBL.datasource" />
+    <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.NivelInglesBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.PuestoBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.TituloBL.datasource" />
     <None Include="Properties\Settings.settings">
@@ -144,6 +147,7 @@
   <ItemGroup>
     <None Include="Resources\aprendizajes_rrhh1.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

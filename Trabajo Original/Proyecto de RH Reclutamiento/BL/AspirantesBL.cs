@@ -21,6 +21,11 @@ namespace Proyecto_de_RH_Reclutamiento.BL
         private void CrearDatosdePrueba()
         {
 
+            //NivelINGLES
+            var nivel1 = new Modelos.NivelIngles(1, "Ninguno ");
+            var nivel2 = new Modelos.NivelIngles(2, "Basico  ");
+            var nivel3 = new Modelos.NivelIngles(3, "Normal");
+            var nivel4 = new Modelos.NivelIngles(4, "Avanzado");
 
             //TITULO
             var tit1 = new Titulo(1, "Tecnico en Computacion");
@@ -40,11 +45,11 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             var area3 = new Modelos.Area(3, "Administracion");
 
             //ASPIRANTES
-            var aspirante1 = new Modelos.Aspirantes(1, "Kevin Javier Rivera Amaya", 22,  "4 años", tit1, 12000, area1);
-            var aspirante2 = new Modelos.Aspirantes(2, "Kevin Arnaldo Cabañas Ortega", 24,  "6 años", tit2, 10000, area2);
-            var aspirante3 = new Modelos.Aspirantes(3, "Oscar Jose Rasacasielo Cerrato", 27,  "3 años", tit3, 13000, area1);
-            var aspirante4 = new Modelos.Aspirantes(4, "Oneida Gabriela Reyes Carranza", 34,  "8 años", tit5, 9000, area3);
-            var aspirante5 = new Modelos.Aspirantes(5, "Jefry Nohemy Coello Valladares", 44,  "7 años", tit7, 5000, area3);
+            var aspirante1 = new Modelos.Aspirantes(1, "Kevin Javier Rivera Amaya", 22, "0512199700879", "4 años", "Reyes Caballero", nivel4, tit1, 12000, area1);
+            var aspirante2 = new Modelos.Aspirantes(2, "Kevin Arnaldo Cabañas Ortega", 24, "0512199600589", "6 años", "Reyes Caballero", nivel2, tit2, 10000, area2);
+            var aspirante3 = new Modelos.Aspirantes(3, "Oscar Jose Rasacasielo Cerrato", 27, "0512199500887", "3 años", "Reyes Caballero", nivel3, tit3, 13000, area1);
+            var aspirante4 = new Modelos.Aspirantes(4, "Oneida Gabriela Reyes Carranza", 34, "0512199700879", "8 años", "Reyes Caballero", nivel4, tit5, 9000, area3);
+            var aspirante5 = new Modelos.Aspirantes(5, "Jefry Nohemy Coello Valladares", 44, "0512198907896", "7 años", "Reyes Caballero", nivel1, tit7, 5000, area3);
 
             ListaDeAspirantes.Add(aspirante1);
             ListaDeAspirantes.Add(aspirante2);
