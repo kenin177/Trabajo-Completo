@@ -40,5 +40,15 @@ namespace Proyecto_de_RH_Reclutamiento
         {
             
         }
+
+        private void idLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void edadLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

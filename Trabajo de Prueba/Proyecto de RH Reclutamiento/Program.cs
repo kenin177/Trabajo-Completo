@@ -16,7 +16,7 @@ namespace Proyecto_de_RH_Reclutamiento
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu ());
+            Application.Run(new FrmMenu ());
         }
     }
 }

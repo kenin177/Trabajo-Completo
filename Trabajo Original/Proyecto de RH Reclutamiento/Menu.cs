@@ -17,7 +17,8 @@ namespace Proyecto_de_RH_Reclutamiento
         TituloBL _tituloBL;
         AreaBL _areaBL;
         PuestoBL _puestoBL;
-        
+        private object formPuesto;
+
         public FrmMenu()
         {
             InitializeComponent();
@@ -78,7 +79,6 @@ namespace Proyecto_de_RH_Reclutamiento
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmMenu.ActiveForm.Close();
-
         }
     }
 }

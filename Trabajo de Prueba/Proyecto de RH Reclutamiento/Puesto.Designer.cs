@@ -47,8 +47,8 @@
             this.listaDePuestosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
             this.idTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.listaDePuestosDataGridView = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaDePuestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -63,18 +63,22 @@
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(13, 126);
+            descripcionLabel.BackColor = System.Drawing.Color.Transparent;
+            descripcionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            descripcionLabel.Location = new System.Drawing.Point(123, 125);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(43, 13);
+            descripcionLabel.Size = new System.Drawing.Size(55, 15);
             descripcionLabel.TabIndex = 1;
             descripcionLabel.Text = "Puesto:";
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(13, 100);
+            idLabel.BackColor = System.Drawing.Color.Transparent;
+            idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            idLabel.Location = new System.Drawing.Point(123, 99);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.Size = new System.Drawing.Size(23, 15);
             idLabel.TabIndex = 3;
             idLabel.Text = "Id:";
             // 
@@ -204,7 +208,7 @@
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDePuestosBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(85, 123);
+            this.descripcionTextBox.Location = new System.Drawing.Point(195, 122);
             this.descripcionTextBox.Name = "descripcionTextBox";
             this.descripcionTextBox.Size = new System.Drawing.Size(100, 20);
             this.descripcionTextBox.TabIndex = 2;
@@ -212,33 +216,35 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDePuestosBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(85, 97);
+            this.idTextBox.Location = new System.Drawing.Point(195, 96);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(100, 20);
             this.idTextBox.TabIndex = 4;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Mantenimiento de Puesto";
-            // 
             // listaDePuestosDataGridView
             // 
             this.listaDePuestosDataGridView.AutoGenerateColumns = false;
+            this.listaDePuestosDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.listaDePuestosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listaDePuestosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.listaDePuestosDataGridView.DataSource = this.listaDePuestosBindingSource;
-            this.listaDePuestosDataGridView.Location = new System.Drawing.Point(16, 161);
+            this.listaDePuestosDataGridView.Location = new System.Drawing.Point(112, 162);
             this.listaDePuestosDataGridView.Name = "listaDePuestosDataGridView";
             this.listaDePuestosDataGridView.Size = new System.Drawing.Size(253, 317);
             this.listaDePuestosDataGridView.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(93, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(301, 34);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Mantenimiento de Puesto";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -264,14 +270,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Proyecto_de_RH_Reclutamiento.Properties.Resources.departamento_recursos_humanos_cambios;
             this.ClientSize = new System.Drawing.Size(496, 514);
-            this.Controls.Add(this.listaDePuestosDataGridView);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.listaDePuestosDataGridView);
             this.Controls.Add(descripcionLabel);
             this.Controls.Add(this.descripcionTextBox);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.listaDePuestosBindingNavigator);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Puesto";
             this.Text = "Puesto";
             this.Load += new System.EventHandler(this.Puesto_Load);
@@ -303,9 +312,9 @@
         private System.Windows.Forms.ToolStripButton listaDePuestosBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox descripcionTextBox;
         private System.Windows.Forms.TextBox idTextBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView listaDePuestosDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Label label1;
     }
 }

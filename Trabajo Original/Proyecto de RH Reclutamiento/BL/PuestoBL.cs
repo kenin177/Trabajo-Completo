@@ -20,8 +20,7 @@ namespace Proyecto_de_RH_Reclutamiento.BL
         }
 
         private void CrearDatosdePrueba()
-        {   
-            /*Informatica*/
+        {   /*Informatica*/
             var puesto1 = new Modelos.Puesto(1, "Programador");
             var puesto2 = new Modelos.Puesto(2, "Diseñador  ");
             var puesto3 = new Modelos.Puesto(3, "Manteminto de Maquinas");

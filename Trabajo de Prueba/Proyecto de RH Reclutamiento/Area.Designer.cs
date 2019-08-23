@@ -34,6 +34,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Area));
             this.listaDeAreasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -48,35 +49,38 @@
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.listaDeAreasDataGridView = new System.Windows.Forms.DataGridView();
-            this.descripcionTextBox = new System.Windows.Forms.TextBox();
-            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionTextBox = new System.Windows.Forms.TextBox();
             this.listaDeAspirantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             descripcionLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingNavigator)).BeginInit();
             this.listaDeAreasBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(12, 102);
+            descripcionLabel.BackColor = System.Drawing.Color.Transparent;
+            descripcionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            descripcionLabel.Location = new System.Drawing.Point(158, 131);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(32, 13);
+            descripcionLabel.Size = new System.Drawing.Size(40, 15);
             descripcionLabel.TabIndex = 1;
             descripcionLabel.Text = "Area:";
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(12, 76);
+            idLabel.BackColor = System.Drawing.Color.Transparent;
+            idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            idLabel.Location = new System.Drawing.Point(158, 105);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.Size = new System.Drawing.Size(23, 15);
             idLabel.TabIndex = 3;
             idLabel.Text = "Id:";
             // 
@@ -106,7 +110,7 @@
             this.listaDeAreasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaDeAreasBindingNavigator.Name = "listaDeAreasBindingNavigator";
             this.listaDeAreasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaDeAreasBindingNavigator.Size = new System.Drawing.Size(775, 25);
+            this.listaDeAreasBindingNavigator.Size = new System.Drawing.Size(464, 25);
             this.listaDeAreasBindingNavigator.TabIndex = 0;
             this.listaDeAreasBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -118,6 +122,10 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // listaDeAreasBindingSource
+            // 
+            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
             // 
             // bindingNavigatorCountItem
             // 
@@ -206,7 +214,7 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAreasBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(84, 73);
+            this.idTextBox.Location = new System.Drawing.Point(210, 102);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(47, 20);
             this.idTextBox.TabIndex = 4;
@@ -214,10 +222,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 35);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(101, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 20);
+            this.label1.Size = new System.Drawing.Size(283, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "Mantenimiento de Area";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -225,27 +234,16 @@
             // listaDeAreasDataGridView
             // 
             this.listaDeAreasDataGridView.AutoGenerateColumns = false;
+            this.listaDeAreasDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.listaDeAreasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listaDeAreasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.listaDeAreasDataGridView.DataSource = this.listaDeAreasBindingSource;
-            this.listaDeAreasDataGridView.Location = new System.Drawing.Point(15, 126);
+            this.listaDeAreasDataGridView.Location = new System.Drawing.Point(93, 172);
             this.listaDeAreasDataGridView.Name = "listaDeAreasDataGridView";
             this.listaDeAreasDataGridView.Size = new System.Drawing.Size(300, 220);
             this.listaDeAreasDataGridView.TabIndex = 7;
-            // 
-            // descripcionTextBox
-            // 
-            this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAreasBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(84, 102);
-            this.descripcionTextBox.Name = "descripcionTextBox";
-            this.descripcionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.descripcionTextBox.TabIndex = 8;
-            // 
-            // listaDeAreasBindingSource
-            // 
-            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -260,6 +258,14 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
+            // descripcionTextBox
+            // 
+            this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAreasBindingSource, "Descripcion", true));
+            this.descripcionTextBox.Location = new System.Drawing.Point(210, 131);
+            this.descripcionTextBox.Name = "descripcionTextBox";
+            this.descripcionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.descripcionTextBox.TabIndex = 8;
+            // 
             // listaDeAspirantesBindingSource
             // 
             this.listaDeAspirantesBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
@@ -268,7 +274,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 435);
+            this.BackgroundImage = global::Proyecto_de_RH_Reclutamiento.Properties.Resources.departamento_recursos_humanos_cambios;
+            this.ClientSize = new System.Drawing.Size(464, 435);
             this.Controls.Add(this.descripcionTextBox);
             this.Controls.Add(this.listaDeAreasDataGridView);
             this.Controls.Add(this.label1);
@@ -276,14 +283,16 @@
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.listaDeAreasBindingNavigator);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Area";
             this.Text = "Area";
             this.Load += new System.EventHandler(this.Area_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingNavigator)).EndInit();
             this.listaDeAreasBindingNavigator.ResumeLayout(false);
             this.listaDeAreasBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

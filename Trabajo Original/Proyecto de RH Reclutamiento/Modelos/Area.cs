@@ -11,14 +11,16 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
         public int Id { get; set; }
         public string Descripcion { get; set; }
 
-             public Area()
-             {
+        public Area()
+        {
 
-             }
+        }
         public Area(int id, string descripcion)
         {
             Id = id;
             Descripcion = descripcion;
         }
+
+
      }   
 }

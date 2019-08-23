@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Proyecto_de_RH_Reclutamiento
 {
-    public partial class Menu : Form
+    public partial class FrmMenu : Form
     {
         AspirantesBL _aspirantesBL;
         TituloBL _tituloBL;
@@ -19,7 +19,7 @@ namespace Proyecto_de_RH_Reclutamiento
         PuestoBL _puestoBL;
         private object formPuesto;
 
-        public Menu()
+        public FrmMenu()
         {
             InitializeComponent();
             _aspirantesBL = new AspirantesBL();
@@ -74,6 +74,11 @@ namespace Proyecto_de_RH_Reclutamiento
         private void Menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMenu.ActiveForm.Close();
         }
     }
 }

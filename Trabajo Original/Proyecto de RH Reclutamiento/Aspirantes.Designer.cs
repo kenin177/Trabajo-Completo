@@ -58,9 +58,6 @@
             this.listaDeTitulosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.listaDeAspirantesDataGridView = new System.Windows.Forms.DataGridView();
-            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +65,10 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             edadLabel = new System.Windows.Forms.Label();
             experienciaLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -84,45 +85,57 @@
             // edadLabel
             // 
             edadLabel.AutoSize = true;
-            edadLabel.Location = new System.Drawing.Point(16, 73);
+            edadLabel.BackColor = System.Drawing.Color.Transparent;
+            edadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            edadLabel.Location = new System.Drawing.Point(72, 131);
             edadLabel.Name = "edadLabel";
-            edadLabel.Size = new System.Drawing.Size(35, 13);
+            edadLabel.Size = new System.Drawing.Size(44, 15);
             edadLabel.TabIndex = 3;
             edadLabel.Text = "Edad:";
+            edadLabel.Click += new System.EventHandler(this.edadLabel_Click);
             // 
             // experienciaLabel
             // 
             experienciaLabel.AutoSize = true;
-            experienciaLabel.Location = new System.Drawing.Point(16, 99);
+            experienciaLabel.BackColor = System.Drawing.Color.Transparent;
+            experienciaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            experienciaLabel.Location = new System.Drawing.Point(72, 157);
             experienciaLabel.Name = "experienciaLabel";
-            experienciaLabel.Size = new System.Drawing.Size(65, 13);
+            experienciaLabel.Size = new System.Drawing.Size(87, 15);
             experienciaLabel.TabIndex = 5;
             experienciaLabel.Text = "Experiencia:";
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(16, 43);
+            idLabel.BackColor = System.Drawing.Color.Transparent;
+            idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            idLabel.Location = new System.Drawing.Point(72, 101);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.Size = new System.Drawing.Size(23, 15);
             idLabel.TabIndex = 7;
             idLabel.Text = "Id:";
+            idLabel.Click += new System.EventHandler(this.idLabel_Click);
             // 
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(107, 43);
+            nombreLabel.BackColor = System.Drawing.Color.Transparent;
+            nombreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nombreLabel.Location = new System.Drawing.Point(148, 101);
             nombreLabel.Name = "nombreLabel";
-            nombreLabel.Size = new System.Drawing.Size(47, 13);
+            nombreLabel.Size = new System.Drawing.Size(62, 15);
             nombreLabel.TabIndex = 9;
             nombreLabel.Text = "Nombre:";
             // 
             // salarioqueQuiereGanarLabel
             // 
             salarioqueQuiereGanarLabel.AutoSize = true;
-            salarioqueQuiereGanarLabel.Location = new System.Drawing.Point(16, 129);
+            salarioqueQuiereGanarLabel.BackColor = System.Drawing.Color.Transparent;
+            salarioqueQuiereGanarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            salarioqueQuiereGanarLabel.Location = new System.Drawing.Point(72, 187);
             salarioqueQuiereGanarLabel.Name = "salarioqueQuiereGanarLabel";
-            salarioqueQuiereGanarLabel.Size = new System.Drawing.Size(42, 13);
+            salarioqueQuiereGanarLabel.Size = new System.Drawing.Size(57, 15);
             salarioqueQuiereGanarLabel.TabIndex = 11;
             salarioqueQuiereGanarLabel.Text = "Salario:";
             // 
@@ -257,7 +270,7 @@
             // edadTextBox
             // 
             this.edadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAspirantesBindingSource, "Edad", true));
-            this.edadTextBox.Location = new System.Drawing.Point(160, 70);
+            this.edadTextBox.Location = new System.Drawing.Point(216, 128);
             this.edadTextBox.Name = "edadTextBox";
             this.edadTextBox.Size = new System.Drawing.Size(100, 20);
             this.edadTextBox.TabIndex = 4;
@@ -265,7 +278,7 @@
             // experienciaTextBox
             // 
             this.experienciaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAspirantesBindingSource, "Experiencia", true));
-            this.experienciaTextBox.Location = new System.Drawing.Point(160, 96);
+            this.experienciaTextBox.Location = new System.Drawing.Point(216, 154);
             this.experienciaTextBox.Name = "experienciaTextBox";
             this.experienciaTextBox.Size = new System.Drawing.Size(100, 20);
             this.experienciaTextBox.TabIndex = 6;
@@ -273,16 +286,16 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAspirantesBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(41, 40);
+            this.idTextBox.Location = new System.Drawing.Point(97, 98);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(56, 20);
+            this.idTextBox.Size = new System.Drawing.Size(40, 20);
             this.idTextBox.TabIndex = 8;
             // 
             // nombreTextBox
             // 
             this.nombreTextBox.AllowDrop = true;
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAspirantesBindingSource, "Nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(160, 40);
+            this.nombreTextBox.Location = new System.Drawing.Point(216, 98);
             this.nombreTextBox.Multiline = true;
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(237, 20);
@@ -291,7 +304,7 @@
             // salarioqueQuiereGanarTextBox
             // 
             this.salarioqueQuiereGanarTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDeAspirantesBindingSource, "SalarioqueQuiereGanar", true));
-            this.salarioqueQuiereGanarTextBox.Location = new System.Drawing.Point(160, 126);
+            this.salarioqueQuiereGanarTextBox.Location = new System.Drawing.Point(216, 184);
             this.salarioqueQuiereGanarTextBox.Name = "salarioqueQuiereGanarTextBox";
             this.salarioqueQuiereGanarTextBox.Size = new System.Drawing.Size(100, 20);
             this.salarioqueQuiereGanarTextBox.TabIndex = 12;
@@ -303,7 +316,7 @@
             this.comboBox1.DisplayMember = "Descripcion";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(58, 151);
+            this.comboBox1.Location = new System.Drawing.Point(121, 209);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 21);
             this.comboBox1.TabIndex = 19;
@@ -317,15 +330,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 154);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(72, 212);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(47, 15);
             this.label1.TabIndex = 20;
             this.label1.Text = "Titulo:";
             // 
             // listaDeAspirantesDataGridView
             // 
             this.listaDeAspirantesDataGridView.AutoGenerateColumns = false;
+            this.listaDeAspirantesDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.listaDeAspirantesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listaDeAspirantesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -336,36 +352,10 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.listaDeAspirantesDataGridView.DataSource = this.listaDeAspirantesBindingSource;
-            this.listaDeAspirantesDataGridView.Location = new System.Drawing.Point(12, 235);
+            this.listaDeAspirantesDataGridView.Location = new System.Drawing.Point(37, 279);
             this.listaDeAspirantesDataGridView.Name = "listaDeAspirantesDataGridView";
             this.listaDeAspirantesDataGridView.Size = new System.Drawing.Size(805, 181);
             this.listaDeAspirantesDataGridView.TabIndex = 20;
-            // 
-            // listaDeAreasBindingSource
-            // 
-            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaDeAspirantesBindingSource, "AreaId", true));
-            this.comboBox2.DataSource = this.listaDeAreasBindingSource;
-            this.comboBox2.DisplayMember = "Descripcion";
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(58, 181);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(131, 21);
-            this.comboBox2.TabIndex = 21;
-            this.comboBox2.ValueMember = "Id";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 184);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Area:";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -398,6 +388,7 @@
             this.dataGridViewTextBoxColumn6.DataPropertyName = "TituloId";
             this.dataGridViewTextBoxColumn6.DataSource = this.listaDeTitulosBindingSource;
             this.dataGridViewTextBoxColumn6.DisplayMember = "Descripcion";
+            this.dataGridViewTextBoxColumn6.FillWeight = 200F;
             this.dataGridViewTextBoxColumn6.HeaderText = "Titulo";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -418,6 +409,7 @@
             this.dataGridViewTextBoxColumn8.DataPropertyName = "AreaId";
             this.dataGridViewTextBoxColumn8.DataSource = this.listaDeAreasBindingSource;
             this.dataGridViewTextBoxColumn8.DisplayMember = "Descripcion";
+            this.dataGridViewTextBoxColumn8.FillWeight = 150F;
             this.dataGridViewTextBoxColumn8.HeaderText = "Area";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -425,11 +417,55 @@
             this.dataGridViewTextBoxColumn8.ValueMember = "Id";
             this.dataGridViewTextBoxColumn8.Width = 120;
             // 
+            // listaDeAreasBindingSource
+            // 
+            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaDeAspirantesBindingSource, "AreaId", true));
+            this.comboBox2.DataSource = this.listaDeAreasBindingSource;
+            this.comboBox2.DisplayMember = "Descripcion";
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(121, 239);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(131, 21);
+            this.comboBox2.TabIndex = 21;
+            this.comboBox2.ValueMember = "Id";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(72, 242);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 15);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Area:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe Script", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(90, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 44);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Aspirantes";
+            // 
             // Aspirantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackgroundImage = global::Proyecto_de_RH_Reclutamiento.Properties.Resources.top_view_of_workspace_vector_set_with_stationery_office_on_desk_background_vector_illustration;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(876, 472);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.listaDeAspirantesDataGridView);
@@ -446,6 +482,8 @@
             this.Controls.Add(salarioqueQuiereGanarLabel);
             this.Controls.Add(this.salarioqueQuiereGanarTextBox);
             this.Controls.Add(this.listaDeAspirantesBindingNavigator);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Aspirantes";
             this.Text = "Aspirantes";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -496,5 +534,6 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.Label label3;
     }
 }

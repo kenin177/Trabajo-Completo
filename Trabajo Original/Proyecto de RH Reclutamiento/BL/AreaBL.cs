@@ -14,8 +14,8 @@ namespace Proyecto_de_RH_Reclutamiento.BL
 
             public AreaBL()
             {
-                ListaDeAreas = new BindingList<Modelos.Area>();
-                CrearDatosdePrueba();
+            ListaDeAreas = new BindingList<Modelos.Area>();
+            CrearDatosdePrueba();
             }
             private void CrearDatosdePrueba()
             {

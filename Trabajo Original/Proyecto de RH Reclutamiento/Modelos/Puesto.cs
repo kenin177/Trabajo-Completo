@@ -8,18 +8,18 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
 {
     public class Puesto
     {
-        public int Id { get; set; }
-        public string Descripcion { get; set; }
+            public int Id { get; set; }
+            public string Descripcion { get; set; }
 
-             public Puesto()
-             {
-
-             }
-        public Puesto(int id, string descripcion)
+        public Puesto()
         {
-            Id = id;
-            Descripcion = descripcion;
+
         }
+            public Puesto(int id, string descripcion)
+            {
+                Id = id;
+                Descripcion = descripcion;
+            }
 
 
     }

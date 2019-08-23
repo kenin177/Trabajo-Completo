@@ -20,6 +20,8 @@ namespace Proyecto_de_RH_Reclutamiento.BL
 
         private void CrearDatosdePrueba()
         {
+
+
             //TITULO
             var tit1 = new Titulo(1, "Tecnico en Computacion");
             var tit2 = new Titulo(2, "Bachillerato Ciencias Y Letras");

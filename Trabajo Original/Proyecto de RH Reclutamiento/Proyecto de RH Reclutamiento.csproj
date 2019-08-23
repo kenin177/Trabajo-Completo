@@ -98,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Puesto.resx">
       <DependentUpon>Puesto.cs</DependentUpon>
@@ -119,7 +120,30 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\lecciones-google-recursos-humanos-occmundial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aprendizajes_rrhh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departamento-recursos-humanos-cambios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apps-recursos-humanos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38485323-infografía-trabajo-en-equipo-con-garabatos-negocio-fondo-sketch-infografías-elementos-vectoriales-aislad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escritorio-tabla-espacio-trabajo-oficina-fondo-blanco_14098-55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-view-of-workspace-vector-set-with-stationery-office-on-desk-background-vector-illustration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aprendizajes_rrhh1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
