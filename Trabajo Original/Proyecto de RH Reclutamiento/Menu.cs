@@ -87,8 +87,12 @@ namespace Proyecto_de_RH_Reclutamiento
         {
 
             FrmAyuda frm = new FrmAyuda();
-
             frm.Show();
+        }
+
+        private void proximamenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

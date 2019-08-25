@@ -45,6 +45,7 @@
             this.verLaAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeRecursosHumanosReclutamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.adicionDeEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +110,8 @@
             // transaccionesToolStripMenuItem
             // 
             this.transaccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.proximamenteToolStripMenuItem});
+            this.proximamenteToolStripMenuItem,
+            this.adicionDeEmpleadosToolStripMenuItem});
             this.transaccionesToolStripMenuItem.Name = "transaccionesToolStripMenuItem";
             this.transaccionesToolStripMenuItem.Size = new System.Drawing.Size(106, 23);
             this.transaccionesToolStripMenuItem.Text = "Transacciones";
@@ -117,8 +119,9 @@
             // proximamenteToolStripMenuItem
             // 
             this.proximamenteToolStripMenuItem.Name = "proximamenteToolStripMenuItem";
-            this.proximamenteToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
-            this.proximamenteToolStripMenuItem.Text = "Proximamente";
+            this.proximamenteToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
+            this.proximamenteToolStripMenuItem.Text = "Busqueda de Empleados";
+            this.proximamenteToolStripMenuItem.Click += new System.EventHandler(this.proximamenteToolStripMenuItem_Click);
             // 
             // reporteToolStripMenuItem
             // 
@@ -188,6 +191,12 @@
             this.label1.Size = new System.Drawing.Size(0, 48);
             this.label1.TabIndex = 2;
             // 
+            // adicionDeEmpleadosToolStripMenuItem
+            // 
+            this.adicionDeEmpleadosToolStripMenuItem.Name = "adicionDeEmpleadosToolStripMenuItem";
+            this.adicionDeEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(215, 24);
+            this.adicionDeEmpleadosToolStripMenuItem.Text = "Adicion de Empleados";
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,6 +242,7 @@
         private System.Windows.Forms.ToolStripMenuItem verLaAyudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeRecursosHumanosReclutamientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proximamenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adicionDeEmpleadosToolStripMenuItem;
     }
 }
 
