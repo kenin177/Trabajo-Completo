@@ -27,10 +27,11 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
         public Aspirantes()
         {
 
-            Titulo = new Titulo(1, "Tecnico en Computacion");
+
+            Titulo = new Titulo(1, "Adminitracion de Empresas");
             TituloId = Titulo.Id;
 
-            Area = new Area(1, "Informatica");
+            Area = new Area(1, "Administracion");
             AreaId = Area.Id;
 
             NivelIngles = new NivelIngles(1, "Ninguno ");

@@ -42,7 +42,11 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void rrporteDeAspirantesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var formFrmReporteAspirantes = new FrmReporteAspirantes();
+            formFrmReporteAspirantes.MdiParent = this;
 
+            formFrmReporteAspirantes.cargarDatos(_aspirantesBL, _tituloBL, _areaBL, _nivelInglesBL);
+            formFrmReporteAspirantes.Show();
         }
 
         private void areasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -93,6 +97,15 @@ namespace Proyecto_de_RH_Reclutamiento
         private void proximamenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void adicionDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmAddAspirantes = new FrmAddAspirantes();
+            FrmAddAspirantes.MdiParent = this;
+
+            FrmAddAspirantes.cargarDatos(_aspirantesBL, _tituloBL, _areaBL, _nivelInglesBL);
+            FrmAddAspirantes.Show();
         }
     }
 }

@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AspiramtesBL.cs" />
     <Compile Include="BL\AreaBL.cs" />
     <Compile Include="BL\AspirantesBL.cs" />
     <Compile Include="BL\NivelInglesBL.cs" />
@@ -58,11 +59,23 @@
     <Compile Include="Aspirantes.Designer.cs">
       <DependentUpon>Aspirantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAddAspirantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddAspirantes.Designer.cs">
+      <DependentUpon>FrmAddAspirantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAyuda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAyuda.Designer.cs">
       <DependentUpon>FrmAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteAspirantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteAspirantes.Designer.cs">
+      <DependentUpon>FrmReporteAspirantes.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelos\Area.cs" />
     <Compile Include="Modelos\Aspirantes.cs" />
@@ -95,8 +108,14 @@
     <EmbeddedResource Include="Aspirantes.resx">
       <DependentUpon>Aspirantes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddAspirantes.resx">
+      <DependentUpon>FrmAddAspirantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAyuda.resx">
       <DependentUpon>FrmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteAspirantes.resx">
+      <DependentUpon>FrmReporteAspirantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

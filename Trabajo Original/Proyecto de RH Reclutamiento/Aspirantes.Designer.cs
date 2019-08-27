@@ -200,7 +200,7 @@
             this.listaDeAspirantesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaDeAspirantesBindingNavigator.Name = "listaDeAspirantesBindingNavigator";
             this.listaDeAspirantesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1348, 25);
+            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1300, 25);
             this.listaDeAspirantesBindingNavigator.TabIndex = 0;
             this.listaDeAspirantesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -448,9 +448,9 @@
             this.dataGridViewTextBoxColumn19,
             this.dataGridViewTextBoxColumn20});
             this.listaDeAspirantesDataGridView1.DataSource = this.listaDeAspirantesBindingSource;
-            this.listaDeAspirantesDataGridView1.Location = new System.Drawing.Point(16, 272);
+            this.listaDeAspirantesDataGridView1.Location = new System.Drawing.Point(0, 272);
             this.listaDeAspirantesDataGridView1.Name = "listaDeAspirantesDataGridView1";
-            this.listaDeAspirantesDataGridView1.Size = new System.Drawing.Size(1312, 196);
+            this.listaDeAspirantesDataGridView1.Size = new System.Drawing.Size(1312, 359);
             this.listaDeAspirantesDataGridView1.TabIndex = 25;
             // 
             // dataGridViewTextBoxColumn4
@@ -567,7 +567,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = global::Proyecto_de_RH_Reclutamiento.Properties.Resources.top_view_of_workspace_vector_set_with_stationery_office_on_desk_background_vector_illustration;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1348, 480);
+            this.ClientSize = new System.Drawing.Size(1300, 643);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listaDeAspirantesDataGridView1);

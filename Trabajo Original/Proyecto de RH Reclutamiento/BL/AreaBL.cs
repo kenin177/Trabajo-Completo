@@ -19,14 +19,20 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             }
             private void CrearDatosdePrueba()
             {
-                var area1 = new Modelos.Area(1, "Informatica ");
-                var area2 = new Modelos.Area(2, "Contaduria  ");
-                var area3 = new Modelos.Area(3, "Administracion");
+            var area1 = new Modelos.Area(1, "Administracion ");
+            var area2 = new Modelos.Area(2, "Contaduria  ");
+            var area3 = new Modelos.Area(3, "Economia");
+            var area4 = new Modelos.Area(4, "Informatica");
+            var area5 = new Modelos.Area(5, "Ingenieria");
+            var area6 = new Modelos.Area(6, "Tecnicos");
 
 
-                 ListaDeAreas.Add(area1);
-                 ListaDeAreas.Add(area2);
-                 ListaDeAreas.Add(area3);
-            }
+            ListaDeAreas.Add(area1);
+            ListaDeAreas.Add(area2);
+            ListaDeAreas.Add(area3);
+            ListaDeAreas.Add(area4);
+            ListaDeAreas.Add(area5);
+            ListaDeAreas.Add(area6);
+        }
    }
 }
