@@ -119,5 +119,10 @@ namespace Proyecto_de_RH_Reclutamiento
 
             FrmContratados.Show();
         }
+
+        private void transaccionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

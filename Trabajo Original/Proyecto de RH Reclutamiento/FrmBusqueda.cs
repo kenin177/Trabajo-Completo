@@ -13,50 +13,31 @@ namespace Proyecto_de_RH_Reclutamiento
 {
     public partial class FrmBusqueda : Form
     {
+        AspirantesBL _aspirantesBL;
         public FrmBusqueda()
         {
             InitializeComponent();
+
+            _aspirantesBL = new AspirantesBL();
+            listaDeAspirantesBindingSource.DataSource = _aspirantesBL.ListaDeAspirantes;
+            listaDeBuscarbindingSource1.DataSource = _aspirantesBL.ListaDeBuscar;
 
         }
 
         private void FrmBusqueda_Load(object sender, EventArgs e)
         {
-            
-            CargarDatos();
 
-        }
-
-        private void CargarDatos()
-        {
-
-            var ListaDeAspirantes = new AspirantesBL();
-            var empleadosactivos = ListaDeAspirantes.ObtenerEmpleadosActivos();
-
-
-            dataGridView1.DataSource = empleadosactivos;          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var aspirante = (Modelos.Aspirantes)listaDeAspirantesBindingSource.Current;
 
-        }
-
-        private void listaDeAspirantesDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            _aspirantesBL.Busqueda(aspirante);
+            listaDeAspirantesBindingSource.ResetBindings(false);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmBusqueda_Load_1(object sender, EventArgs e)
         {
 
         }

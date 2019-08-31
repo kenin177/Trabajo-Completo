@@ -49,14 +49,15 @@ namespace Proyecto_de_RH_Reclutamiento.BL
 
         public void Busqueda(Modelos.Aspirantes aspirantes)
         {
-            
 
-            foreach (var busqueda in ListaDeBuscar)
+            var texto = FrmBusqueda.textBox1.text;
+            
+            foreach (var buscar in ListaDeBuscar)
             {
-                if (aspirantes.Nombre == buscar)
-                {
+               if (aspirantes.Nombre != buscar.Nombre)
+               {
                     ListaDeBuscar.Add(aspirantes);
-                }
+               }
             }
             
         }
