@@ -200,7 +200,7 @@
             this.listaDeAspirantesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaDeAspirantesBindingNavigator.Name = "listaDeAspirantesBindingNavigator";
             this.listaDeAspirantesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1300, 25);
+            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1327, 25);
             this.listaDeAspirantesBindingNavigator.TabIndex = 0;
             this.listaDeAspirantesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -213,6 +213,7 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
             // 
             // listaDeAspirantesBindingSource
             // 
@@ -567,7 +568,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = global::Proyecto_de_RH_Reclutamiento.Properties.Resources.top_view_of_workspace_vector_set_with_stationery_office_on_desk_background_vector_illustration;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1300, 643);
+            this.ClientSize = new System.Drawing.Size(1327, 643);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listaDeAspirantesDataGridView1);
@@ -594,6 +595,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Aspirantes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Aspirantes";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).EndInit();

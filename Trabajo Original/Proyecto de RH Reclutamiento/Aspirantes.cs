@@ -52,5 +52,10 @@ namespace Proyecto_de_RH_Reclutamiento
         {
 
         }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

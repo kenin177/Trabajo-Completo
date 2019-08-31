@@ -11,11 +11,54 @@ namespace Proyecto_de_RH_Reclutamiento.BL
     public class AspirantesBL
     {
         public BindingList<Modelos.Aspirantes> ListaDeAspirantes { get; set; }
+        public BindingList<Modelos.Aspirantes> ListaDeContratados { get; set; }
+        public BindingList<Modelos.Aspirantes> ListaDeBuscar { get; set; }
+
+
 
         public AspirantesBL()
         {
             ListaDeAspirantes = new BindingList<Modelos.Aspirantes>();
+            ListaDeContratados = new BindingList<Modelos.Aspirantes>();
+            ListaDeBuscar = new BindingList<Modelos.Aspirantes>();
             CrearDatosdePrueba();
+        }
+
+        public void AgregarEmpContratado(Modelos.Aspirantes aspirante)
+        {
+            var encontrado = false;
+
+            foreach (var contratados in ListaDeContratados)
+            {
+                if (aspirante.Id == contratados.Id)
+                {
+                    encontrado = true;
+                }
+            }
+
+            if (encontrado == false)
+            {
+                ListaDeContratados.Add(aspirante);
+            }       
+        }
+
+        public void RemoverAspirante(Modelos.Aspirantes aspirantes)
+        {
+            ListaDeAspirantes.Remove(aspirantes);
+        }
+
+        public void Busqueda(Modelos.Aspirantes aspirantes)
+        {
+            
+
+            foreach (var busqueda in ListaDeBuscar)
+            {
+                if (aspirantes.Nombre == buscar)
+                {
+                    ListaDeBuscar.Add(aspirantes);
+                }
+            }
+            
         }
 
         private void CrearDatosdePrueba()
@@ -111,6 +154,33 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             ListaDeAspirantes.Add(aspirante25);
 
         }
+
+        internal void AgregarEmpContratado(Aspirante aspirante)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void AgregarEmpContratado()
+        {
+            throw new NotImplementedException();
+        }
+
+        /*public List<Modelos.Aspirantes> ObtenerEmpleadosActivos(string buscar)
+        {
+            
+            var listaEmpleadosActivos = new List<Modelos.Aspirantes>();
+
+            foreach (var aspirante in ListaDeAspirantes)
+            {
+                if (aspirante.Nombre.Contains(buscar) == true)
+                {
+                    listaEmpleadosActivos.Add(aspirante);
+                }
+            }
+            return listaEmpleadosActivos;
+        }*/
+
+
     }
 }
 

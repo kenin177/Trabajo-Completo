@@ -23,6 +23,7 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
         public Titulo Titulo { get; set; }
         public int SalarioqueQuiereGanar { get; set; }
         public Area Area { get; set; }
+        public bool Actividad { get; set; }
 
         public Aspirantes()
         {
@@ -50,6 +51,7 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
             Titulo = titulo;
             SalarioqueQuiereGanar = salarioQueQuiereGanar;
             Area = area;
+            Actividad = true;
             AreaId = area.Id;
             TituloId = titulo.Id;
             NivelInglesId = nivelingles.Id;

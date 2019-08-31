@@ -37,6 +37,7 @@
             this.transaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proximamenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionDeEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contratacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rrporteDeAspirantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeAspirantesContratadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -109,7 +110,8 @@
             // 
             this.transaccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.proximamenteToolStripMenuItem,
-            this.adicionDeEmpleadosToolStripMenuItem});
+            this.adicionDeEmpleadosToolStripMenuItem,
+            this.contratacionToolStripMenuItem});
             this.transaccionesToolStripMenuItem.Name = "transaccionesToolStripMenuItem";
             this.transaccionesToolStripMenuItem.Size = new System.Drawing.Size(106, 23);
             this.transaccionesToolStripMenuItem.Text = "Transacciones";
@@ -127,6 +129,13 @@
             this.adicionDeEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
             this.adicionDeEmpleadosToolStripMenuItem.Text = "Adicion de Empleados";
             this.adicionDeEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.adicionDeEmpleadosToolStripMenuItem_Click);
+            // 
+            // contratacionToolStripMenuItem
+            // 
+            this.contratacionToolStripMenuItem.Name = "contratacionToolStripMenuItem";
+            this.contratacionToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
+            this.contratacionToolStripMenuItem.Text = "Contratacion";
+            this.contratacionToolStripMenuItem.Click += new System.EventHandler(this.contratacionToolStripMenuItem_Click);
             // 
             // reporteToolStripMenuItem
             // 
@@ -225,6 +234,7 @@
         private System.Windows.Forms.ToolStripMenuItem proximamenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adicionDeEmpleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteDeAspirantesContratadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contratacionToolStripMenuItem;
     }
 }
 

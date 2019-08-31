@@ -47,10 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AspiramtesBL.cs" />
+    <Compile Include="Aspirante.cs" />
     <Compile Include="BL\AreaBL.cs" />
     <Compile Include="BL\AspirantesBL.cs" />
     <Compile Include="BL\NivelInglesBL.cs" />
+    <Compile Include="BL\Prueba.cs" />
     <Compile Include="BL\PuestoBL.cs" />
     <Compile Include="BL\TituloBL.cs" />
     <Compile Include="Aspirantes.cs">
@@ -70,6 +71,18 @@
     </Compile>
     <Compile Include="FrmAyuda.Designer.cs">
       <DependentUpon>FrmAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusqueda.Designer.cs">
+      <DependentUpon>FrmBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContratados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContratados.Designer.cs">
+      <DependentUpon>FrmContratados.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReporteAspirantes.cs">
       <SubType>Form</SubType>
@@ -113,6 +126,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAyuda.resx">
       <DependentUpon>FrmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusqueda.resx">
+      <DependentUpon>FrmBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContratados.resx">
+      <DependentUpon>FrmContratados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReporteAspirantes.resx">
       <DependentUpon>FrmReporteAspirantes.cs</DependentUpon>

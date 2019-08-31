@@ -96,7 +96,10 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void proximamenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var FrmBusqueda = new FrmBusqueda();
+            FrmBusqueda.MdiParent = this;
 
+            FrmBusqueda.Show();
         }
 
         private void adicionDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -106,6 +109,15 @@ namespace Proyecto_de_RH_Reclutamiento
 
             FrmAddAspirantes.cargarDatos(_aspirantesBL, _tituloBL, _areaBL, _nivelInglesBL);
             FrmAddAspirantes.Show();
+        }
+
+        private void contratacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmContratados = new FrmContratados();
+            FrmContratados.MdiParent = this;
+
+
+            FrmContratados.Show();
         }
     }
 }
