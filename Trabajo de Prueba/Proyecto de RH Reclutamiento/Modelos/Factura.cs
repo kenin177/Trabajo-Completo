@@ -38,9 +38,9 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
             double subtotal = 0;
             foreach (var detalle in FacturaDetalle)
             {
-                var salario = aspirantesBL.ObtenerSalario(detalle.AspiranteId);
+                //var salario = aspirantesBL.ObtenerSalario(detalle.AspiranteId);
 
-                subtotal = subtotal + detalle.CalcularTotalDetalle(salario);
+                subtotal = subtotal + detalle.CalcularTotalDetalle();
             }
 
             double cantidad = 0;
@@ -91,9 +91,9 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
             
             /*Se toma en cuenta el salario que ganara por la comision que se cobrara, 
             multipicandolo por la cantidad de salarios que se tomaran*/
-            public double CalcularTotalDetalle(double salario)
+            public double CalcularTotalDetalle( )
             {
-                Salario = salario;
+                
                 Total = (Salario * 0.50)*CantDeSal;
 
                 return Total;
