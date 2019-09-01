@@ -47,7 +47,7 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             ListaDeAspirantes.Remove(aspirantes);
         }
 
-        public void Busqueda(Modelos.Aspirantes aspirantes)
+        /*public void Busqueda(Modelos.Aspirantes aspirantes)
         {
 
             var texto = FrmBusqueda.textBox1.text;
@@ -60,7 +60,7 @@ namespace Proyecto_de_RH_Reclutamiento.BL
                }
             }
             
-        }
+        }*/
 
         private void CrearDatosdePrueba()
         {

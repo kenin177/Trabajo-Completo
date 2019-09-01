@@ -47,8 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aspirante.cs" />
     <Compile Include="BL\AreaBL.cs" />
     <Compile Include="BL\AspirantesBL.cs" />
+    <Compile Include="BL\FacturaBL.cs" />
+    <Compile Include="BL\NivelInglesBL.cs" />
     <Compile Include="BL\PuestoBL.cs" />
     <Compile Include="BL\TituloBL.cs" />
     <Compile Include="Aspirantes.cs">
@@ -56,6 +59,43 @@
     </Compile>
     <Compile Include="Aspirantes.Designer.cs">
       <DependentUpon>Aspirantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturasBL.cs" />
+    <Compile Include="FrmAddAspirantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddAspirantes.Designer.cs">
+      <DependentUpon>FrmAddAspirantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAyuda.Designer.cs">
+      <DependentUpon>FrmAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusqueda.Designer.cs">
+      <DependentUpon>FrmBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContratados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContratados.Designer.cs">
+      <DependentUpon>FrmContratados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFactura.Designer.cs">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteAspirantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteAspirantes.Designer.cs">
+      <DependentUpon>FrmReporteAspirantes.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelos\Area.cs" />
     <Compile Include="Modelos\Aspirantes.cs" />
@@ -71,6 +111,8 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\Factura.cs" />
+    <Compile Include="Modelos\NivelIngles.cs" />
     <Compile Include="Modelos\Titulo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +128,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aspirantes.resx">
       <DependentUpon>Aspirantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddAspirantes.resx">
+      <DependentUpon>FrmAddAspirantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAyuda.resx">
+      <DependentUpon>FrmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusqueda.resx">
+      <DependentUpon>FrmBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContratados.resx">
+      <DependentUpon>FrmContratados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFactura.resx">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteAspirantes.resx">
+      <DependentUpon>FrmReporteAspirantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -105,6 +165,8 @@
     </EmbeddedResource>
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.AreaBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.AspirantesBL.datasource" />
+    <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.FacturaBL.datasource" />
+    <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.NivelInglesBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.PuestoBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.TituloBL.datasource" />
     <None Include="Properties\Settings.settings">
@@ -143,6 +205,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\aprendizajes_rrhh1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acerca De.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acerca De1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

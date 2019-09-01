@@ -17,7 +17,7 @@ namespace Proyecto_de_RH_Reclutamiento
         TituloBL _tituloBL;
         AreaBL _areaBL;
         PuestoBL _puestoBL;
-        private object formPuesto;
+        NivelInglesBL _nivelInglesBL;
 
         public FrmMenu()
         {
@@ -26,6 +26,8 @@ namespace Proyecto_de_RH_Reclutamiento
             _tituloBL = new TituloBL();
             _areaBL = new AreaBL();
             _puestoBL = new PuestoBL();
+            _nivelInglesBL = new NivelInglesBL();
+
         }
 
         private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,7 +42,11 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void rrporteDeAspirantesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var formFrmReporteAspirantes = new FrmReporteAspirantes();
+            formFrmReporteAspirantes.MdiParent = this;
 
+            formFrmReporteAspirantes.cargarDatos(_aspirantesBL, _tituloBL, _areaBL, _nivelInglesBL);
+            formFrmReporteAspirantes.Show();
         }
 
         private void areasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -67,7 +73,7 @@ namespace Proyecto_de_RH_Reclutamiento
             var formAspirante = new Aspirantes();
             formAspirante.MdiParent = this;
 
-            formAspirante.cargarDatos(_aspirantesBL, _tituloBL, _areaBL);
+            formAspirante.cargarDatos(_aspirantesBL, _tituloBL, _areaBL, _nivelInglesBL);
             formAspirante.Show();
         }
 
@@ -79,6 +85,44 @@ namespace Proyecto_de_RH_Reclutamiento
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmMenu.ActiveForm.Close();
+        }
+
+        private void acercaDeRecursosHumanosReclutamientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FrmAyuda frm = new FrmAyuda();
+            frm.Show();
+        }
+
+        private void proximamenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmBusqueda = new FrmBusqueda();
+            FrmBusqueda.MdiParent = this;
+
+            FrmBusqueda.Show();
+        }
+
+        private void adicionDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmAddAspirantes = new FrmAddAspirantes();
+            FrmAddAspirantes.MdiParent = this;
+
+            FrmAddAspirantes.cargarDatos(_aspirantesBL, _tituloBL, _areaBL, _nivelInglesBL);
+            FrmAddAspirantes.Show();
+        }
+
+        private void contratacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmContratados = new FrmContratados();
+            FrmContratados.MdiParent = this;
+
+
+            FrmContratados.Show();
+        }
+
+        private void transaccionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

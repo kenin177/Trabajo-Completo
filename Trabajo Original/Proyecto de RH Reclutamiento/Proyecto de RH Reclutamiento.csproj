@@ -50,8 +50,8 @@
     <Compile Include="Aspirante.cs" />
     <Compile Include="BL\AreaBL.cs" />
     <Compile Include="BL\AspirantesBL.cs" />
+    <Compile Include="BL\FacturaBL.cs" />
     <Compile Include="BL\NivelInglesBL.cs" />
-    <Compile Include="BL\Prueba.cs" />
     <Compile Include="BL\PuestoBL.cs" />
     <Compile Include="BL\TituloBL.cs" />
     <Compile Include="Aspirantes.cs">
@@ -84,6 +84,12 @@
     <Compile Include="FrmContratados.Designer.cs">
       <DependentUpon>FrmContratados.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFactura.Designer.cs">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReporteAspirantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,7 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\Factura.cs" />
     <Compile Include="Modelos\NivelIngles.cs" />
     <Compile Include="Modelos\Titulo.cs" />
     <Compile Include="Program.cs" />
@@ -133,6 +140,9 @@
     <EmbeddedResource Include="FrmContratados.resx">
       <DependentUpon>FrmContratados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFactura.resx">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReporteAspirantes.resx">
       <DependentUpon>FrmReporteAspirantes.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +164,7 @@
     </EmbeddedResource>
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.AreaBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.AspirantesBL.datasource" />
+    <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.FacturaBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.NivelInglesBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.PuestoBL.datasource" />
     <None Include="Properties\DataSources\Proyecto_de_RH_Reclutamiento.BL.TituloBL.datasource" />

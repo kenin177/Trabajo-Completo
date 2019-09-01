@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_de_RH_Reclutamiento
 {
-    partial class FrmContratados
+    partial class FrmReporteAspirantes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmContratados));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReporteAspirantes));
             this.listaDeAspirantesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.listaDeAspirantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -49,20 +48,23 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listaDeAspirantesDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listaDeContratadosbindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.listaDeNivelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.listaDeTitulosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listaDeAspirantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).BeginInit();
             this.listaDeAspirantesBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeContratadosbindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeNivelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeTitulosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // listaDeAspirantesBindingNavigator
@@ -91,23 +93,19 @@
             this.listaDeAspirantesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaDeAspirantesBindingNavigator.Name = "listaDeAspirantesBindingNavigator";
             this.listaDeAspirantesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1214, 25);
-            this.listaDeAspirantesBindingNavigator.TabIndex = 1;
+            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1241, 25);
+            this.listaDeAspirantesBindingNavigator.TabIndex = 0;
             this.listaDeAspirantesBindingNavigator.Text = "bindingNavigator1";
-            this.listaDeAspirantesBindingNavigator.RefreshItems += new System.EventHandler(this.listaDeAspirantesBindingNavigator_RefreshItems);
             // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Enabled = false;
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // listaDeAspirantesBindingSource
-            // 
-            this.listaDeAspirantesBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
             // 
             // bindingNavigatorCountItem
             // 
@@ -119,6 +117,7 @@
             // bindingNavigatorDeleteItem
             // 
             this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Enabled = false;
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
@@ -196,137 +195,155 @@
             // 
             // listaDeAspirantesDataGridView
             // 
+            this.listaDeAspirantesDataGridView.AllowUserToAddRows = false;
+            this.listaDeAspirantesDataGridView.AllowUserToDeleteRows = false;
             this.listaDeAspirantesDataGridView.AutoGenerateColumns = false;
             this.listaDeAspirantesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listaDeAspirantesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13});
             this.listaDeAspirantesDataGridView.DataSource = this.listaDeAspirantesBindingSource;
-            this.listaDeAspirantesDataGridView.Location = new System.Drawing.Point(41, 79);
+            this.listaDeAspirantesDataGridView.Location = new System.Drawing.Point(12, 43);
             this.listaDeAspirantesDataGridView.Name = "listaDeAspirantesDataGridView";
-            this.listaDeAspirantesDataGridView.Size = new System.Drawing.Size(496, 220);
+            this.listaDeAspirantesDataGridView.ReadOnly = true;
+            this.listaDeAspirantesDataGridView.Size = new System.Drawing.Size(1217, 403);
             this.listaDeAspirantesDataGridView.TabIndex = 1;
-            this.listaDeAspirantesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaDeAspirantesDataGridView_CellContentClick_1);
+            this.listaDeAspirantesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaDeAspirantesDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
             this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Edad";
             this.dataGridViewTextBoxColumn3.HeaderText = "Edad";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Identidad";
             this.dataGridViewTextBoxColumn4.HeaderText = "Identidad";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(562, 137);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(562, 190);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // listaDeAspirantesDataGridView1
-            // 
-            this.listaDeAspirantesDataGridView1.AutoGenerateColumns = false;
-            this.listaDeAspirantesDataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            this.listaDeAspirantesDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listaDeAspirantesDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            this.listaDeAspirantesDataGridView1.DataSource = this.listaDeContratadosbindingSource;
-            this.listaDeAspirantesDataGridView1.Location = new System.Drawing.Point(669, 79);
-            this.listaDeAspirantesDataGridView1.Name = "listaDeAspirantesDataGridView1";
-            this.listaDeAspirantesDataGridView1.Size = new System.Drawing.Size(506, 220);
-            this.listaDeAspirantesDataGridView1.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Nombre";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Edad";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Edad";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn8
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Identidad";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Identidad";
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Experiencia";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Experiencia";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
-            // listaDeContratadosbindingSource
+            // dataGridViewTextBoxColumn9
             // 
-            this.listaDeContratadosbindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Direccion";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Direccion";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
             // 
-            // FrmContratados
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "NivelInglesId";
+            this.dataGridViewTextBoxColumn10.DataSource = this.listaDeNivelBindingSource;
+            this.dataGridViewTextBoxColumn10.DisplayMember = "Nivel";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Nivel de Ingles";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn10.ValueMember = "Id";
+            // 
+            // listaDeNivelBindingSource
+            // 
+            this.listaDeNivelBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.NivelIngles);
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "TituloId";
+            this.dataGridViewTextBoxColumn11.DataSource = this.listaDeTitulosBindingSource;
+            this.dataGridViewTextBoxColumn11.DisplayMember = "Descripcion";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Titulo";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn11.ValueMember = "Id";
+            // 
+            // listaDeTitulosBindingSource
+            // 
+            this.listaDeTitulosBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Titulo);
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "SalarioqueQuiereGanar";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Salario";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "AreaId";
+            this.dataGridViewTextBoxColumn13.DataSource = this.listaDeAreasBindingSource;
+            this.dataGridViewTextBoxColumn13.DisplayMember = "Descripcion";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Area";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn13.ValueMember = "Id";
+            // 
+            // listaDeAreasBindingSource
+            // 
+            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
+            // 
+            // listaDeAspirantesBindingSource
+            // 
+            this.listaDeAspirantesBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
+            // 
+            // FrmReporteAspirantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1214, 433);
-            this.Controls.Add(this.listaDeAspirantesDataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1241, 566);
             this.Controls.Add(this.listaDeAspirantesDataGridView);
             this.Controls.Add(this.listaDeAspirantesBindingNavigator);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FrmContratados";
-            this.Text = "FrmContratados";
-            this.Load += new System.EventHandler(this.FrmContratados_Load);
+            this.Name = "FrmReporteAspirantes";
+            this.Text = "Reporte de Aspirantes";
+            this.Load += new System.EventHandler(this.FrmReporteAspirantes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).EndInit();
             this.listaDeAspirantesBindingNavigator.ResumeLayout(false);
             this.listaDeAspirantesBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeContratadosbindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeNivelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeTitulosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
         private System.Windows.Forms.BindingSource listaDeAspirantesBindingSource;
         private System.Windows.Forms.BindingNavigator listaDeAspirantesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
@@ -342,17 +359,18 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton listaDeAspirantesBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView listaDeAspirantesDataGridView;
+        private System.Windows.Forms.BindingSource listaDeNivelBindingSource;
+        private System.Windows.Forms.BindingSource listaDeTitulosBindingSource;
+        private System.Windows.Forms.BindingSource listaDeAreasBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView listaDeAspirantesDataGridView1;
-        private System.Windows.Forms.BindingSource listaDeContratadosbindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn13;
     }
 }
