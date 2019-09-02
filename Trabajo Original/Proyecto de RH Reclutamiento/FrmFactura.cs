@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Proyecto_de_RH_Reclutamiento.BL;
+using Proyecto_de_RH_Reclutamiento.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,39 @@ namespace Proyecto_de_RH_Reclutamiento
 {
     public partial class FrmFactura : Form
     {
+        FacturaBL _facturaBL;
         public FrmFactura()
         {
-            InitializeComponent();
+            InitializeComponent();          
+        }
+
+        public void cargarDatos(FacturaBL facturaBL, AspirantesBL aspirantesBL, PuestoBL puestoBL, AreaBL areaBL)
+        {
+            _facturaBL = facturaBL;
+
+            listadeFacturasBindingSource.DataSource = facturaBL.ListadeFacturas;
+            listaDeAspirantesBindingSource.DataSource = aspirantesBL.ListaDeContratados;
+            listaDePuestosBindingSource.DataSource = puestoBL.ListaDePuestos;
+            listaDeAreasBindingSource.DataSource = areaBL.ListaDeAreas;
+        }
+
+        private void FrmFactura_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void facturaDetalleDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void facturaDetalleDataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            var factura = (Factura)listadeFacturasBindingSource.Current;
+            factura.CalcularTotalFactura();
+
+            listadeFacturasBindingSource.ResetBindings(false);
+
         }
     }
 }

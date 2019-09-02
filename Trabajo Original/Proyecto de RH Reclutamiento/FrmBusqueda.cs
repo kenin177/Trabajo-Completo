@@ -31,15 +31,20 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*var aspirante = (Modelos.Aspirantes)listaDeAspirantesBindingSource.Current;
+            var aspirantesBL = new AspirantesBL();
+            var texto = textBox1.Text;
 
-            _aspirantesBL.Busqueda(aspirante);
-            listaDeAspirantesBindingSource.ResetBindings(false);*/
+            var aspirantes = (Modelos.Aspirantes)listaDeAspirantesBindingSource.Current;
+            aspirantesBL.Busqueda(aspirantes, textBox1.Text);
+
+            listaDeAspirantesBindingSource.ResetBindings(false);
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
+
     }
 }

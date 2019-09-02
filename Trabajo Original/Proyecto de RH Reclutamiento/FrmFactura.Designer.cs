@@ -29,67 +29,129 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFactura));
             System.Windows.Forms.Label activoLabel;
             System.Windows.Forms.Label cantAspirantesLabel;
             System.Windows.Forms.Label compañiaLabel;
             System.Windows.Forms.Label fechaLabel;
             System.Windows.Forms.Label idLabel;
-            System.Windows.Forms.Label impuestoLabel;
             System.Windows.Forms.Label subTotalLabel;
             System.Windows.Forms.Label totalLabel;
-            this.listadeFacturasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFactura));
             this.listadeFacturasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.listadeFacturasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.listadeFacturasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.activoCheckBox = new System.Windows.Forms.CheckBox();
             this.cantAspirantesTextBox = new System.Windows.Forms.TextBox();
             this.compañiaTextBox = new System.Windows.Forms.TextBox();
             this.fechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.idTextBox = new System.Windows.Forms.TextBox();
-            this.impuestoTextBox = new System.Windows.Forms.TextBox();
             this.subTotalTextBox = new System.Windows.Forms.TextBox();
             this.totalTextBox = new System.Windows.Forms.TextBox();
             this.facturaDetalleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.facturaDetalleDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.listaDeAspirantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.listaDePuestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             activoLabel = new System.Windows.Forms.Label();
             cantAspirantesLabel = new System.Windows.Forms.Label();
             compañiaLabel = new System.Windows.Forms.Label();
             fechaLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
-            impuestoLabel = new System.Windows.Forms.Label();
             subTotalLabel = new System.Windows.Forms.Label();
             totalLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeFacturasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeFacturasBindingNavigator)).BeginInit();
             this.listadeFacturasBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeFacturasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaDetalleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaDetalleDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // listadeFacturasBindingSource
+            // activoLabel
             // 
-            this.listadeFacturasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Factura);
+            activoLabel.AutoSize = true;
+            activoLabel.Location = new System.Drawing.Point(26, 122);
+            activoLabel.Name = "activoLabel";
+            activoLabel.Size = new System.Drawing.Size(40, 13);
+            activoLabel.TabIndex = 1;
+            activoLabel.Text = "Activo:";
+            // 
+            // cantAspirantesLabel
+            // 
+            cantAspirantesLabel.AutoSize = true;
+            cantAspirantesLabel.Location = new System.Drawing.Point(879, 402);
+            cantAspirantesLabel.Name = "cantAspirantesLabel";
+            cantAspirantesLabel.Size = new System.Drawing.Size(87, 13);
+            cantAspirantesLabel.TabIndex = 3;
+            cantAspirantesLabel.Text = "Cant. Aspirantes:";
+            // 
+            // compañiaLabel
+            // 
+            compañiaLabel.AutoSize = true;
+            compañiaLabel.Location = new System.Drawing.Point(26, 67);
+            compañiaLabel.Name = "compañiaLabel";
+            compañiaLabel.Size = new System.Drawing.Size(57, 13);
+            compañiaLabel.TabIndex = 5;
+            compañiaLabel.Text = "Compañia:";
+            // 
+            // fechaLabel
+            // 
+            fechaLabel.AutoSize = true;
+            fechaLabel.Location = new System.Drawing.Point(26, 94);
+            fechaLabel.Name = "fechaLabel";
+            fechaLabel.Size = new System.Drawing.Size(40, 13);
+            fechaLabel.TabIndex = 7;
+            fechaLabel.Text = "Fecha:";
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(26, 41);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.TabIndex = 9;
+            idLabel.Text = "Id:";
+            // 
+            // subTotalLabel
+            // 
+            subTotalLabel.AutoSize = true;
+            subTotalLabel.Location = new System.Drawing.Point(879, 428);
+            subTotalLabel.Name = "subTotalLabel";
+            subTotalLabel.Size = new System.Drawing.Size(159, 13);
+            subTotalLabel.TabIndex = 13;
+            subTotalLabel.Text = "Total de Comisiones Mensuales:";
+            // 
+            // totalLabel
+            // 
+            totalLabel.AutoSize = true;
+            totalLabel.Location = new System.Drawing.Point(879, 454);
+            totalLabel.Name = "totalLabel";
+            totalLabel.Size = new System.Drawing.Size(152, 13);
+            totalLabel.TabIndex = 15;
+            totalLabel.Text = "Total de Comisiones Completo:";
             // 
             // listadeFacturasBindingNavigator
             // 
@@ -117,9 +179,38 @@
             this.listadeFacturasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listadeFacturasBindingNavigator.Name = "listadeFacturasBindingNavigator";
             this.listadeFacturasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listadeFacturasBindingNavigator.Size = new System.Drawing.Size(1091, 25);
+            this.listadeFacturasBindingNavigator.Size = new System.Drawing.Size(1221, 25);
             this.listadeFacturasBindingNavigator.TabIndex = 0;
             this.listadeFacturasBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // listadeFacturasBindingSource
+            // 
+            this.listadeFacturasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Factura);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -153,16 +244,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -185,26 +269,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // listadeFacturasBindingNavigatorSaveItem
             // 
@@ -215,15 +281,6 @@
             this.listadeFacturasBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.listadeFacturasBindingNavigatorSaveItem.Text = "Guardar datos";
             // 
-            // activoLabel
-            // 
-            activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(26, 122);
-            activoLabel.Name = "activoLabel";
-            activoLabel.Size = new System.Drawing.Size(40, 13);
-            activoLabel.TabIndex = 1;
-            activoLabel.Text = "Activo:";
-            // 
             // activoCheckBox
             // 
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listadeFacturasBindingSource, "Activo", true));
@@ -231,34 +288,15 @@
             this.activoCheckBox.Name = "activoCheckBox";
             this.activoCheckBox.Size = new System.Drawing.Size(200, 24);
             this.activoCheckBox.TabIndex = 2;
-            this.activoCheckBox.Text = "checkBox1";
             this.activoCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // cantAspirantesLabel
-            // 
-            cantAspirantesLabel.AutoSize = true;
-            cantAspirantesLabel.Location = new System.Drawing.Point(773, 388);
-            cantAspirantesLabel.Name = "cantAspirantesLabel";
-            cantAspirantesLabel.Size = new System.Drawing.Size(84, 13);
-            cantAspirantesLabel.TabIndex = 3;
-            cantAspirantesLabel.Text = "Cant Aspirantes:";
             // 
             // cantAspirantesTextBox
             // 
             this.cantAspirantesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeFacturasBindingSource, "CantAspirantes", true));
-            this.cantAspirantesTextBox.Location = new System.Drawing.Point(863, 385);
+            this.cantAspirantesTextBox.Location = new System.Drawing.Point(1044, 399);
             this.cantAspirantesTextBox.Name = "cantAspirantesTextBox";
-            this.cantAspirantesTextBox.Size = new System.Drawing.Size(200, 20);
+            this.cantAspirantesTextBox.Size = new System.Drawing.Size(144, 20);
             this.cantAspirantesTextBox.TabIndex = 4;
-            // 
-            // compañiaLabel
-            // 
-            compañiaLabel.AutoSize = true;
-            compañiaLabel.Location = new System.Drawing.Point(26, 67);
-            compañiaLabel.Name = "compañiaLabel";
-            compañiaLabel.Size = new System.Drawing.Size(57, 13);
-            compañiaLabel.TabIndex = 5;
-            compañiaLabel.Text = "Compañia:";
             // 
             // compañiaTextBox
             // 
@@ -268,15 +306,6 @@
             this.compañiaTextBox.Size = new System.Drawing.Size(200, 20);
             this.compañiaTextBox.TabIndex = 6;
             // 
-            // fechaLabel
-            // 
-            fechaLabel.AutoSize = true;
-            fechaLabel.Location = new System.Drawing.Point(26, 94);
-            fechaLabel.Name = "fechaLabel";
-            fechaLabel.Size = new System.Drawing.Size(40, 13);
-            fechaLabel.TabIndex = 7;
-            fechaLabel.Text = "Fecha:";
-            // 
             // fechaDateTimePicker
             // 
             this.fechaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.listadeFacturasBindingSource, "Fecha", true));
@@ -285,72 +314,28 @@
             this.fechaDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.fechaDateTimePicker.TabIndex = 8;
             // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(26, 41);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 9;
-            idLabel.Text = "Id:";
-            // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeFacturasBindingSource, "Id", true));
             this.idTextBox.Location = new System.Drawing.Point(116, 38);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(200, 20);
+            this.idTextBox.Size = new System.Drawing.Size(52, 20);
             this.idTextBox.TabIndex = 10;
-            // 
-            // impuestoLabel
-            // 
-            impuestoLabel.AutoSize = true;
-            impuestoLabel.Location = new System.Drawing.Point(773, 414);
-            impuestoLabel.Name = "impuestoLabel";
-            impuestoLabel.Size = new System.Drawing.Size(53, 13);
-            impuestoLabel.TabIndex = 11;
-            impuestoLabel.Text = "Impuesto:";
-            // 
-            // impuestoTextBox
-            // 
-            this.impuestoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeFacturasBindingSource, "Impuesto", true));
-            this.impuestoTextBox.Location = new System.Drawing.Point(863, 411);
-            this.impuestoTextBox.Name = "impuestoTextBox";
-            this.impuestoTextBox.Size = new System.Drawing.Size(200, 20);
-            this.impuestoTextBox.TabIndex = 12;
-            // 
-            // subTotalLabel
-            // 
-            subTotalLabel.AutoSize = true;
-            subTotalLabel.Location = new System.Drawing.Point(773, 440);
-            subTotalLabel.Name = "subTotalLabel";
-            subTotalLabel.Size = new System.Drawing.Size(56, 13);
-            subTotalLabel.TabIndex = 13;
-            subTotalLabel.Text = "Sub Total:";
             // 
             // subTotalTextBox
             // 
             this.subTotalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeFacturasBindingSource, "SubTotal", true));
-            this.subTotalTextBox.Location = new System.Drawing.Point(863, 437);
+            this.subTotalTextBox.Location = new System.Drawing.Point(1044, 425);
             this.subTotalTextBox.Name = "subTotalTextBox";
-            this.subTotalTextBox.Size = new System.Drawing.Size(200, 20);
+            this.subTotalTextBox.Size = new System.Drawing.Size(144, 20);
             this.subTotalTextBox.TabIndex = 14;
-            // 
-            // totalLabel
-            // 
-            totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(773, 466);
-            totalLabel.Name = "totalLabel";
-            totalLabel.Size = new System.Drawing.Size(34, 13);
-            totalLabel.TabIndex = 15;
-            totalLabel.Text = "Total:";
             // 
             // totalTextBox
             // 
             this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeFacturasBindingSource, "Total", true));
-            this.totalTextBox.Location = new System.Drawing.Point(863, 463);
+            this.totalTextBox.Location = new System.Drawing.Point(1044, 451);
             this.totalTextBox.Name = "totalTextBox";
-            this.totalTextBox.Size = new System.Drawing.Size(200, 20);
+            this.totalTextBox.Size = new System.Drawing.Size(144, 20);
             this.totalTextBox.TabIndex = 16;
             // 
             // facturaDetalleBindingSource
@@ -363,87 +348,123 @@
             this.facturaDetalleDataGridView.AutoGenerateColumns = false;
             this.facturaDetalleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.facturaDetalleDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
+            this.Cantidad,
             this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
             this.facturaDetalleDataGridView.DataSource = this.facturaDetalleBindingSource;
-            this.facturaDetalleDataGridView.Location = new System.Drawing.Point(12, 147);
+            this.facturaDetalleDataGridView.Location = new System.Drawing.Point(29, 147);
             this.facturaDetalleDataGridView.Name = "facturaDetalleDataGridView";
-            this.facturaDetalleDataGridView.Size = new System.Drawing.Size(1051, 220);
+            this.facturaDetalleDataGridView.Size = new System.Drawing.Size(1159, 220);
             this.facturaDetalleDataGridView.TabIndex = 17;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "AspiranteId";
-            this.dataGridViewTextBoxColumn2.HeaderText = "AspiranteId";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.facturaDetalleDataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.facturaDetalleDataGridView_CellEndEdit);
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Aspirante";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "AspiranteId";
+            this.dataGridViewTextBoxColumn3.DataSource = this.listaDeAspirantesBindingSource;
+            this.dataGridViewTextBoxColumn3.DisplayMember = "Nombre";
             this.dataGridViewTextBoxColumn3.HeaderText = "Aspirante";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn3.ValueMember = "Id";
+            this.dataGridViewTextBoxColumn3.Width = 200;
             // 
-            // dataGridViewTextBoxColumn4
+            // listaDeAspirantesBindingSource
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "PuestoId";
-            this.dataGridViewTextBoxColumn4.HeaderText = "PuestoId";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.listaDeAspirantesBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "AspiranteId";
+            this.dataGridViewTextBoxColumn1.DataSource = this.listaDeAspirantesBindingSource;
+            this.dataGridViewTextBoxColumn1.DisplayMember = "Identidad";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn1.ValueMember = "Id";
+            this.dataGridViewTextBoxColumn1.Width = 120;
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Puesto";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Puesto";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "AreaId";
+            this.dataGridViewTextBoxColumn5.DataSource = this.listaDeAreasBindingSource;
+            this.dataGridViewTextBoxColumn5.DisplayMember = "Descripcion";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Area";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn5.ValueMember = "Id";
+            this.dataGridViewTextBoxColumn5.Width = 120;
             // 
-            // dataGridViewTextBoxColumn6
+            // listaDeAreasBindingSource
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Cantidad";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Cantidad";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "CantDeSal";
-            this.dataGridViewTextBoxColumn7.HeaderText = "CantDeSal";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "PuestoId";
+            this.dataGridViewTextBoxColumn7.DataSource = this.listaDePuestosBindingSource;
+            this.dataGridViewTextBoxColumn7.DisplayMember = "Descripcion";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Puesto";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn7.ValueMember = "Id";
+            this.dataGridViewTextBoxColumn7.Width = 150;
             // 
-            // dataGridViewTextBoxColumn8
+            // listaDePuestosBindingSource
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Salario";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Salario";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.listaDePuestosBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Puesto);
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.DataPropertyName = "Cantidad";
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
             // 
             // dataGridViewTextBoxColumn9
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Comision";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Comision";
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "CantDeSal";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Salarios Tomados";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // dataGridViewTextBoxColumn10
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Total";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Total";
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Salario";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Salario";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Comision";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Comision";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Total";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Total";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Cantidad";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // FrmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 513);
+            this.ClientSize = new System.Drawing.Size(1221, 498);
             this.Controls.Add(this.facturaDetalleDataGridView);
             this.Controls.Add(activoLabel);
             this.Controls.Add(this.activoCheckBox);
@@ -455,21 +476,24 @@
             this.Controls.Add(this.fechaDateTimePicker);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
-            this.Controls.Add(impuestoLabel);
-            this.Controls.Add(this.impuestoTextBox);
             this.Controls.Add(subTotalLabel);
             this.Controls.Add(this.subTotalTextBox);
             this.Controls.Add(totalLabel);
             this.Controls.Add(this.totalTextBox);
             this.Controls.Add(this.listadeFacturasBindingNavigator);
             this.Name = "FrmFactura";
-            this.Text = "FrmFactura";
-            ((System.ComponentModel.ISupportInitialize)(this.listadeFacturasBindingSource)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Factura";
+            this.Load += new System.EventHandler(this.FrmFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listadeFacturasBindingNavigator)).EndInit();
             this.listadeFacturasBindingNavigator.ResumeLayout(false);
             this.listadeFacturasBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeFacturasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaDetalleBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaDetalleDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDePuestosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,20 +520,22 @@
         private System.Windows.Forms.TextBox compañiaTextBox;
         private System.Windows.Forms.DateTimePicker fechaDateTimePicker;
         private System.Windows.Forms.TextBox idTextBox;
-        private System.Windows.Forms.TextBox impuestoTextBox;
         private System.Windows.Forms.TextBox subTotalTextBox;
         private System.Windows.Forms.TextBox totalTextBox;
         private System.Windows.Forms.BindingSource facturaDetalleBindingSource;
+        private System.Windows.Forms.BindingSource listaDeAspirantesBindingSource;
+        private System.Windows.Forms.BindingSource listaDePuestosBindingSource;
+        private System.Windows.Forms.BindingSource listaDeAreasBindingSource;
         private System.Windows.Forms.DataGridView facturaDetalleDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
     }
 }

@@ -31,61 +31,55 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBusqueda));
             this.listaDeAspirantesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.listaDeAspirantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.listaDeAspirantesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.listaDeAspirantesDataGridView = new System.Windows.Forms.DataGridView();
             this.listaDeAspirantesDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.listaDeBuscarbindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.listaDeAspirantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.listaDeNivelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.listaDeTitulosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).BeginInit();
             this.listaDeAspirantesBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeBuscarbindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeNivelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeTitulosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // listaDeAspirantesBindingNavigator
@@ -114,9 +108,38 @@
             this.listaDeAspirantesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaDeAspirantesBindingNavigator.Name = "listaDeAspirantesBindingNavigator";
             this.listaDeAspirantesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(945, 25);
+            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1030, 25);
             this.listaDeAspirantesBindingNavigator.TabIndex = 0;
             this.listaDeAspirantesBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // listaDeAspirantesBindingSource
+            // 
+            this.listaDeAspirantesBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -150,16 +173,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -182,26 +198,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // listaDeAspirantesBindingNavigatorSaveItem
             // 
@@ -212,31 +210,6 @@
             this.listaDeAspirantesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.listaDeAspirantesBindingNavigatorSaveItem.Text = "Guardar datos";
             // 
-            // listaDeAspirantesDataGridView
-            // 
-            this.listaDeAspirantesDataGridView.AutoGenerateColumns = false;
-            this.listaDeAspirantesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listaDeAspirantesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewCheckBoxColumn1});
-            this.listaDeAspirantesDataGridView.DataSource = this.listaDeAspirantesBindingSource;
-            this.listaDeAspirantesDataGridView.Location = new System.Drawing.Point(36, 226);
-            this.listaDeAspirantesDataGridView.Name = "listaDeAspirantesDataGridView";
-            this.listaDeAspirantesDataGridView.Size = new System.Drawing.Size(300, 220);
-            this.listaDeAspirantesDataGridView.TabIndex = 1;
-            // 
             // listaDeAspirantesDataGridView1
             // 
             this.listaDeAspirantesDataGridView1.AutoGenerateColumns = false;
@@ -246,31 +219,17 @@
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20,
             this.dataGridViewTextBoxColumn21,
             this.dataGridViewTextBoxColumn22,
             this.dataGridViewTextBoxColumn23,
             this.dataGridViewTextBoxColumn24,
             this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewCheckBoxColumn2});
+            this.dataGridViewTextBoxColumn26});
             this.listaDeAspirantesDataGridView1.DataSource = this.listaDeBuscarbindingSource1;
-            this.listaDeAspirantesDataGridView1.Location = new System.Drawing.Point(527, 226);
+            this.listaDeAspirantesDataGridView1.Location = new System.Drawing.Point(39, 232);
             this.listaDeAspirantesDataGridView1.Name = "listaDeAspirantesDataGridView1";
-            this.listaDeAspirantesDataGridView1.Size = new System.Drawing.Size(300, 220);
+            this.listaDeAspirantesDataGridView1.Size = new System.Drawing.Size(715, 220);
             this.listaDeAspirantesDataGridView1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(393, 327);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridViewTextBoxColumn14
             // 
@@ -295,24 +254,6 @@
             this.dataGridViewTextBoxColumn17.DataPropertyName = "Identidad";
             this.dataGridViewTextBoxColumn17.HeaderText = "Identidad";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "AreaId";
-            this.dataGridViewTextBoxColumn18.HeaderText = "AreaId";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "TituloId";
-            this.dataGridViewTextBoxColumn19.HeaderText = "TituloId";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "NivelInglesId";
-            this.dataGridViewTextBoxColumn20.HeaderText = "NivelInglesId";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             // 
             // dataGridViewTextBoxColumn21
             // 
@@ -350,150 +291,159 @@
             this.dataGridViewTextBoxColumn26.HeaderText = "Area";
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             // 
-            // dataGridViewCheckBoxColumn2
-            // 
-            this.dataGridViewCheckBoxColumn2.DataPropertyName = "Actividad";
-            this.dataGridViewCheckBoxColumn2.HeaderText = "Actividad";
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
-            // 
             // listaDeBuscarbindingSource1
             // 
             this.listaDeBuscarbindingSource1.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
             // 
-            // dataGridViewTextBoxColumn1
+            // button1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Edad";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Edad";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Identidad";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Identidad";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "AreaId";
-            this.dataGridViewTextBoxColumn5.HeaderText = "AreaId";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "TituloId";
-            this.dataGridViewTextBoxColumn6.HeaderText = "TituloId";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "NivelInglesId";
-            this.dataGridViewTextBoxColumn7.HeaderText = "NivelInglesId";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Experiencia";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Experiencia";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Direccion";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Direccion";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "NivelIngles";
-            this.dataGridViewTextBoxColumn10.HeaderText = "NivelIngles";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Titulo";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Titulo";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "SalarioqueQuiereGanar";
-            this.dataGridViewTextBoxColumn12.HeaderText = "SalarioqueQuiereGanar";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Area";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Area";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Actividad";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Actividad";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
-            // listaDeAspirantesBindingSource
-            // 
-            this.listaDeAspirantesBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
+            this.button1.Location = new System.Drawing.Point(403, 125);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "BUSCAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 47);
+            this.label1.Location = new System.Drawing.Point(36, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(77, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.label1.Text = "Nivel de Ingles";
             // 
             // comboBox1
             // 
+            this.comboBox1.DataSource = this.listaDeAreasBindingSource;
+            this.comboBox1.DisplayMember = "Descripcion";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(77, 82);
+            this.comboBox1.Location = new System.Drawing.Point(156, 41);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(155, 21);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.ValueMember = "Id";
+            // 
+            // listaDeAreasBindingSource
+            // 
+            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 85);
+            this.label2.Location = new System.Drawing.Point(36, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
+            this.label2.Text = "Area de Trabajo";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.listaDeNivelBindingSource;
+            this.comboBox2.DisplayMember = "Nivel";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(156, 70);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.TabIndex = 8;
+            this.comboBox2.ValueMember = "Id";
+            // 
+            // listaDeNivelBindingSource
+            // 
+            this.listaDeNivelBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.NivelIngles);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(36, 104);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Años de experiencia";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(156, 101);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(36, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Edad";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(156, 127);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(339, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Titulo";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DataSource = this.listaDeTitulosBindingSource;
+            this.comboBox3.DisplayMember = "Descripcion";
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(378, 41);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(195, 21);
+            this.comboBox3.TabIndex = 14;
+            this.comboBox3.ValueMember = "Id";
+            // 
+            // listaDeTitulosBindingSource
+            // 
+            this.listaDeTitulosBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Titulo);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(339, 73);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Salario";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(378, 73);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 16;
             // 
             // FrmBusqueda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 491);
+            this.ClientSize = new System.Drawing.Size(1030, 491);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listaDeAspirantesDataGridView1);
-            this.Controls.Add(this.listaDeAspirantesDataGridView);
             this.Controls.Add(this.listaDeAspirantesBindingNavigator);
             this.Name = "FrmBusqueda";
             this.Text = "FrmBusqueda";
@@ -501,10 +451,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).EndInit();
             this.listaDeAspirantesBindingNavigator.ResumeLayout(false);
             this.listaDeAspirantesBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeBuscarbindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeNivelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeTitulosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,41 +478,33 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton listaDeAspirantesBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView listaDeAspirantesDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridView listaDeAspirantesDataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.BindingSource listaDeBuscarbindingSource1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.BindingSource listaDeBuscarbindingSource1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.BindingSource listaDeAreasBindingSource;
+        private System.Windows.Forms.BindingSource listaDeNivelBindingSource;
+        private System.Windows.Forms.BindingSource listaDeTitulosBindingSource;
     }
 }

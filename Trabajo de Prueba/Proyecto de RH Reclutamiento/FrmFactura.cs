@@ -17,16 +17,15 @@ namespace Proyecto_de_RH_Reclutamiento
         FacturaBL _facturaBL;
         public FrmFactura()
         {
-            InitializeComponent();
-            
+            InitializeComponent();          
         }
 
-        public void cargarDatos(FacturaBL facturaBL, AspirantesBL apirantesBL, PuestoBL puestoBL, AreaBL areaBL)
+        public void cargarDatos(FacturaBL facturaBL, AspirantesBL aspirantesBL, PuestoBL puestoBL, AreaBL areaBL)
         {
             _facturaBL = facturaBL;
 
             listadeFacturasBindingSource.DataSource = facturaBL.ListadeFacturas;
-            listaDeAspirantesBindingSource.DataSource = apirantesBL.ListaDeAspirantes;
+            listaDeAspirantesBindingSource.DataSource = aspirantesBL.ListaDeContratados;
             listaDePuestosBindingSource.DataSource = puestoBL.ListaDePuestos;
             listaDeAreasBindingSource.DataSource = areaBL.ListaDeAreas;
         }

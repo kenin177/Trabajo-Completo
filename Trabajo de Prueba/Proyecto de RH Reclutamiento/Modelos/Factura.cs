@@ -49,10 +49,19 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
                 cantidad = cantidad + aspirante.CalcularCantAsp();
             }
 
+            double comision = 0;
+            foreach (var comisiones in FacturaDetalle)
+            {
+                comision = comision + comisiones.CalcularComision();
+            }
 
             CantAspirantes = cantidad;
-            SubTotal = subtotal;
-            Total = SubTotal * CantAspirantes;
+            
+            //Cantidad Total de comisiones mensual
+            SubTotal = comision;
+
+            //Cantidad Total de comisiones sumando los 3 meses
+            Total = SubTotal * 3;
         }
 
     }
@@ -76,7 +85,7 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
 
             public double CantDeSal { get; set; }
             public double Salario { get; set; }
-            public string Comision { get; set; }
+            public double Comision { get; set; }
             public double Total { get; set; }
 
             public FacturaDetalle()
@@ -85,20 +94,27 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
                 CantDeSal = 3;
                 AspiranteId = 1;
                 AreaId = 1;
-                PuestoId = 1;
-                Comision = "50%";
-            }           
+                PuestoId = 1;         
+        }           
             
             /*Se toma en cuenta el salario que ganara por la comision que se cobrara, 
             multipicandolo por la cantidad de salarios que se tomaran*/
             public double CalcularTotalDetalle( )
-            {
-                
+            {              
                 Total = (Salario * 0.50)*CantDeSal;
 
-                return Total;
+                return Total;               
             }
             
+            //Se toma el Salario para multiplicarlo por el 50% y asi sacar la comision
+            public double CalcularComision()
+            {
+                Comision = (Salario * 0.50);
+
+                return Comision;
+            }
+                    
+
             /*Se suman el total de aspirantes para sacar un total al final y obtener 
             la cantidad de comisiones completa por todos los aspirantes*/
             public double CalcularCantAsp()

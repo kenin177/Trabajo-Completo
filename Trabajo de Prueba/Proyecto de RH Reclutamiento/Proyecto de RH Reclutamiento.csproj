@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aspirante.cs" />
     <Compile Include="BL\AreaBL.cs" />
     <Compile Include="BL\AspirantesBL.cs" />
     <Compile Include="BL\FacturaBL.cs" />
@@ -60,7 +59,6 @@
     <Compile Include="Aspirantes.Designer.cs">
       <DependentUpon>Aspirantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FacturasBL.cs" />
     <Compile Include="FrmAddAspirantes.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -24,6 +24,22 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             CrearDatosdePrueba();
         }
 
+        public double ObtenerSalario(int id)
+        {
+            double salario = 0;
+
+            foreach (var aspirantes in ListaDeAspirantes)
+            {
+                if (aspirantes.Id == id)
+                {
+                    salario = aspirantes.SalarioqueQuiereGanar;
+                }
+
+            }
+
+            return salario;
+        }
+
         public void AgregarEmpContratado(Modelos.Aspirantes aspirante)
         {
             var encontrado = false;
@@ -44,23 +60,24 @@ namespace Proyecto_de_RH_Reclutamiento.BL
 
         public void RemoverAspirante(Modelos.Aspirantes aspirantes)
         {
-            ListaDeAspirantes.Remove(aspirantes);
+            ListaDeAspirantes.Remove(aspirantes);            
         }
 
-        /*public void Busqueda(Modelos.Aspirantes aspirantes)
+        public void RemoverContratado(Modelos.Aspirantes contratados)
         {
+            ListaDeContratados.Remove(contratados);
+        }
 
-            var texto = FrmBusqueda.textBox1.text;
-            
-            foreach (var buscar in ListaDeBuscar)
+        public void Busqueda(Modelos.Aspirantes aspirantes, string texto)
+        {                     
+            foreach (var buscar in ListaDeAspirantes)
             {
-               if (aspirantes.Nombre != buscar.Nombre)
+               if (aspirantes.Nombre.ToLower().Contains(texto.ToLower()))
                {
                     ListaDeBuscar.Add(aspirantes);
                }
-            }
-            
-        }*/
+            }            
+        }
 
         private void CrearDatosdePrueba()
         {
@@ -92,10 +109,10 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             //AREA
             var area1 = new Modelos.Area(1, "Administracion ");
             var area2 = new Modelos.Area(2, "Contaduria  ");
-            var area3 = new Modelos.Area(3, "Economia");
-            var area4 = new Modelos.Area(4, "Informatica");
-            var area5 = new Modelos.Area(5, "Ingenieria");
-            var area6 = new Modelos.Area(6, "Tecnicos");
+            var area3 = new Modelos.Area(3, "Informatica");
+            var area4 = new Modelos.Area(4, "Ingenieria");
+            var area5 = new Modelos.Area(5, "Tecnicos");
+            var area6 = new Modelos.Area(6, "Ventas");
 
             //ASPIRANTES
             var aspirante0 = new Modelos.Aspirantes(0, " ", 0, " ", " ", " ", nivel1, tit1, 0, area1);
@@ -154,16 +171,6 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             ListaDeAspirantes.Add(aspirante24);
             ListaDeAspirantes.Add(aspirante25);
 
-        }
-
-        internal void AgregarEmpContratado(Aspirante aspirante)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal void AgregarEmpContratado()
-        {
-            throw new NotImplementedException();
         }
 
         /*public List<Modelos.Aspirantes> ObtenerEmpleadosActivos(string buscar)

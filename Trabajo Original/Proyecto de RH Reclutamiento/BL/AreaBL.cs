@@ -21,10 +21,10 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             {
             var area1 = new Modelos.Area(1, "Administracion ");
             var area2 = new Modelos.Area(2, "Contaduria  ");
-            var area3 = new Modelos.Area(3, "Economia");
-            var area4 = new Modelos.Area(4, "Informatica");
-            var area5 = new Modelos.Area(5, "Ingenieria");
-            var area6 = new Modelos.Area(6, "Tecnicos");
+            var area3 = new Modelos.Area(3, "Informatica");
+            var area4 = new Modelos.Area(4, "Ingenieria");
+            var area5 = new Modelos.Area(5, "Tecnicos");
+            var area6 = new Modelos.Area(6, "Ventas");
 
 
             ListaDeAreas.Add(area1);

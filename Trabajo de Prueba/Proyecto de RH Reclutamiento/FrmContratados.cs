@@ -49,7 +49,7 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            button3.Enabled = true;
             var aspirante = (Modelos.Aspirantes)listaDeAspirantesBindingSource.Current;
 
             _aspirantesBL.AgregarEmpContratado(aspirante);
@@ -70,10 +70,9 @@ namespace Proyecto_de_RH_Reclutamiento
         private void button2_Click(object sender, EventArgs e)
         {
             var aspirantes = (Modelos.Aspirantes)listaDeAspirantesBindingSource.Current;
-            _aspirantesBL.RemoverAspirante(aspirantes);
+            _aspirantesBL.RemoverAspirante(aspirantes);            
 
-            listaDeAspirantesBindingSource.ResetBindings(false);
-
+            listaDeAspirantesBindingSource.ResetBindings(false);            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -83,6 +82,14 @@ namespace Proyecto_de_RH_Reclutamiento
             frmFactura.cargarDatos(_facturaBL, _aspirantesBL, _puestoBL, _areaBL);
             frmFactura.Show();
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var contratados = (Modelos.Aspirantes)listaDeContratadosbindingSource.Current;
+            _aspirantesBL.RemoverContratado(contratados);
+
+            listaDeContratadosbindingSource.ResetBindings(false);
         }
     }
 }

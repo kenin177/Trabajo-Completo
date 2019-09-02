@@ -595,7 +595,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Aspirantes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aspirantes";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).EndInit();

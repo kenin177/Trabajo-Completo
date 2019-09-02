@@ -60,23 +60,24 @@ namespace Proyecto_de_RH_Reclutamiento.BL
 
         public void RemoverAspirante(Modelos.Aspirantes aspirantes)
         {
-            ListaDeAspirantes.Remove(aspirantes);
+            ListaDeAspirantes.Remove(aspirantes);            
         }
 
-        /*public void Busqueda(Modelos.Aspirantes aspirantes)
+        public void RemoverContratado(Modelos.Aspirantes contratados)
         {
+            ListaDeContratados.Remove(contratados);
+        }
 
-            var texto = FrmBusqueda.textBox1.text;
-            
-            foreach (var buscar in ListaDeBuscar)
+        public void Busqueda(Modelos.Aspirantes aspirantes, string texto)
+        {                     
+            foreach (var buscar in ListaDeAspirantes)
             {
-               if (aspirantes.Nombre != buscar.Nombre)
+               if (aspirantes.Nombre.ToLower().Contains(texto.ToLower()))
                {
                     ListaDeBuscar.Add(aspirantes);
                }
-            }
-            
-        }*/
+            }            
+        }
 
         private void CrearDatosdePrueba()
         {
@@ -170,16 +171,6 @@ namespace Proyecto_de_RH_Reclutamiento.BL
             ListaDeAspirantes.Add(aspirante24);
             ListaDeAspirantes.Add(aspirante25);
 
-        }
-
-        internal void AgregarEmpContratado(Aspirante aspirante)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal void AgregarEmpContratado()
-        {
-            throw new NotImplementedException();
         }
 
         /*public List<Modelos.Aspirantes> ObtenerEmpleadosActivos(string buscar)

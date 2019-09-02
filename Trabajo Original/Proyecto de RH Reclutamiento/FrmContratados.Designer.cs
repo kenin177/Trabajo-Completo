@@ -57,6 +57,8 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaDeContratadosbindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).BeginInit();
             this.listaDeAspirantesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).BeginInit();
@@ -91,7 +93,7 @@
             this.listaDeAspirantesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaDeAspirantesBindingNavigator.Name = "listaDeAspirantesBindingNavigator";
             this.listaDeAspirantesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1214, 25);
+            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1247, 25);
             this.listaDeAspirantesBindingNavigator.TabIndex = 1;
             this.listaDeAspirantesBindingNavigator.Text = "bindingNavigator1";
             this.listaDeAspirantesBindingNavigator.RefreshItems += new System.EventHandler(this.listaDeAspirantesBindingNavigator_RefreshItems);
@@ -206,7 +208,7 @@
             this.listaDeAspirantesDataGridView.DataSource = this.listaDeAspirantesBindingSource;
             this.listaDeAspirantesDataGridView.Location = new System.Drawing.Point(41, 79);
             this.listaDeAspirantesDataGridView.Name = "listaDeAspirantesDataGridView";
-            this.listaDeAspirantesDataGridView.Size = new System.Drawing.Size(496, 220);
+            this.listaDeAspirantesDataGridView.Size = new System.Drawing.Size(515, 220);
             this.listaDeAspirantesDataGridView.TabIndex = 1;
             this.listaDeAspirantesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaDeAspirantesDataGridView_CellContentClick_1);
             // 
@@ -236,21 +238,21 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(562, 137);
+            this.button1.Location = new System.Drawing.Point(574, 136);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Agregar";
+            this.button1.Text = "Agregar --->";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(562, 190);
+            this.button2.Location = new System.Drawing.Point(574, 189);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Borrar";
+            this.button2.Text = "<---Borrar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -267,7 +269,7 @@
             this.listaDeAspirantesDataGridView1.DataSource = this.listaDeContratadosbindingSource;
             this.listaDeAspirantesDataGridView1.Location = new System.Drawing.Point(669, 79);
             this.listaDeAspirantesDataGridView1.Name = "listaDeAspirantesDataGridView1";
-            this.listaDeAspirantesDataGridView1.Size = new System.Drawing.Size(506, 220);
+            this.listaDeAspirantesDataGridView1.Size = new System.Drawing.Size(533, 220);
             this.listaDeAspirantesDataGridView1.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn5
@@ -298,12 +300,36 @@
             // 
             this.listaDeContratadosbindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
             // 
+            // button3
+            // 
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1062, 316);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 46);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "CONFIRMAR";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(574, 218);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Borrar --->";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // FrmContratados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1214, 433);
+            this.ClientSize = new System.Drawing.Size(1247, 394);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.listaDeAspirantesDataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -312,7 +338,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmContratados";
-            this.Text = "FrmContratados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Contratados";
             this.Load += new System.EventHandler(this.FrmContratados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).EndInit();
             this.listaDeAspirantesBindingNavigator.ResumeLayout(false);
@@ -350,9 +377,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView listaDeAspirantesDataGridView1;
         private System.Windows.Forms.BindingSource listaDeContratadosbindingSource;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.Button button4;
     }
 }
