@@ -18,6 +18,8 @@ namespace Proyecto_de_RH_Reclutamiento
         AreaBL _areaBL;
         PuestoBL _puestoBL;
         NivelInglesBL _nivelInglesBL;
+        UsuariosBL _usuariosBL;
+        FacturaBL _facturaBL;
 
         public FrmMenu()
         {
@@ -27,6 +29,8 @@ namespace Proyecto_de_RH_Reclutamiento
             _areaBL = new AreaBL();
             _puestoBL = new PuestoBL();
             _nivelInglesBL = new NivelInglesBL();
+            _usuariosBL = new UsuariosBL();
+            _facturaBL = new FacturaBL();
 
         }
 
@@ -79,6 +83,28 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            var login = new Login();
+            login.CargarDatos(_usuariosBL);
+            login.ShowDialog();
+
+            areasToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerAreas;
+
+            puestosToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerPuestos;
+            aspiranteToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerReporteDeAspirantes;
+
+            proximamenteToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerBusquedaDeEmpleados;
+            adicionDeEmpleadosToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerAdicionDeEmpleados;
+            contratacionToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerContratacion;
+
+            rrporteDeAspirantesToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerReporteDeAspirantes;
+            reporteDeAspirantesContratadosToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerReporteDeAspiratesContratados;
+
+            verLaAyudaToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerLaAyuda;
+            acercaDeRecursosHumanosReclutamientoToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerAcercaDeRecursosHumanos;
+
+
+
+
 
         }
 
@@ -116,13 +142,50 @@ namespace Proyecto_de_RH_Reclutamiento
             var FrmContratados = new FrmContratados();
             FrmContratados.MdiParent = this;
 
-
+            FrmContratados.cargarDatos(_aspirantesBL);
             FrmContratados.Show();
         }
 
         private void transaccionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmFactura = new FrmFactura();
+            FrmFactura.MdiParent = this;
+
+            FrmFactura.Show();
+        }
+
+        private void reporteDeAspirantesContratadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteAspirantes = new FormReporteAspirates();
+            formReporteAspirantes.MdiParent = this;
+            formReporteAspirantes.CargarDatos(_aspirantesBL);
+
+            formReporteAspirantes.Show();
+
+
+        }
+
+        private void reporteTotalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteTotales = new FormReporteTotales();
+            formReporteTotales.CargarDatos(_facturaBL, _aspirantesBL);
+            formReporteTotales.MdiParent = this;
+
+            formReporteTotales.Show();
+        }
+
+        private void facturaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var frmFactura = new FrmFactura();
+            frmFactura.MdiParent = this;
+
+            frmFactura.cargarDatos(_facturaBL, _aspirantesBL, _puestoBL, _areaBL);
+            frmFactura.Show();
         }
     }
 }

@@ -14,21 +14,17 @@ namespace Proyecto_de_RH_Reclutamiento
     public partial class FrmContratados : Form
     {
         AspirantesBL _aspirantesBL;
-        FacturaBL _facturaBL;
-        PuestoBL _puestoBL;
-        AreaBL _areaBL;
-         
+
         public FrmContratados()
         {
             InitializeComponent();
-
-            _aspirantesBL = new AspirantesBL();
-            _facturaBL = new FacturaBL();
-            _puestoBL = new PuestoBL();
-            _areaBL = new AreaBL();
-
-            listaDeAspirantesBindingSource.DataSource = _aspirantesBL.ListaDeAspirantes;
-            listaDeContratadosbindingSource.DataSource = _aspirantesBL.ListaDeContratados;
+         
+        }
+        public void cargarDatos(AspirantesBL aspirantesBL)
+        {
+            _aspirantesBL = aspirantesBL;
+            listaDeAspirantesBindingSource.DataSource = aspirantesBL.ListaDeAspirantes;
+            listaDeContratadosbindingSource.DataSource = aspirantesBL.ListaDeContratados;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -49,6 +45,8 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
             button3.Enabled = true;
             var aspirante = (Modelos.Aspirantes)listaDeAspirantesBindingSource.Current;
 
@@ -69,6 +67,9 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+
+
             var aspirantes = (Modelos.Aspirantes)listaDeAspirantesBindingSource.Current;
             _aspirantesBL.RemoverAspirante(aspirantes);            
 
@@ -77,10 +78,11 @@ namespace Proyecto_de_RH_Reclutamiento
 
         private void button3_Click(object sender, EventArgs e)
         {
+            /*
             var frmFactura = new FrmFactura();
             
             frmFactura.cargarDatos(_facturaBL, _aspirantesBL, _puestoBL, _areaBL);
-            frmFactura.Show();
+            frmFactura.Show();*/
 
         }
 
