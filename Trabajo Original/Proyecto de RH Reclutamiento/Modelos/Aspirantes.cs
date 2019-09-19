@@ -24,6 +24,8 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
         public int SalarioqueQuiereGanar { get; set; }
         public Area Area { get; set; }
         public bool Actividad { get; set; }
+        public byte[] Foto { get; set; }
+        public int Existencia { get; set; }
 
         public Aspirantes()
         {

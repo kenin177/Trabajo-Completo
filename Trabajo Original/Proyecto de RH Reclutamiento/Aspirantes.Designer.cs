@@ -79,6 +79,10 @@
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             salarioqueQuiereGanarLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -93,6 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeNivelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // salarioqueQuiereGanarLabel
@@ -200,7 +205,7 @@
             this.listaDeAspirantesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaDeAspirantesBindingNavigator.Name = "listaDeAspirantesBindingNavigator";
             this.listaDeAspirantesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1327, 25);
+            this.listaDeAspirantesBindingNavigator.Size = new System.Drawing.Size(1284, 25);
             this.listaDeAspirantesBindingNavigator.TabIndex = 0;
             this.listaDeAspirantesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -561,6 +566,41 @@
             this.comboBox3.TabIndex = 27;
             this.comboBox3.ValueMember = "Id";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.listaDeAspirantesBindingSource, "Foto", true));
+            this.pictureBox1.Location = new System.Drawing.Point(1046, 53);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(156, 174);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1046, 239);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1136, 239);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Remover";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Aspirantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,7 +608,10 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = global::Proyecto_de_RH_Reclutamiento.Properties.Resources.top_view_of_workspace_vector_set_with_stationery_office_on_desk_background_vector_illustration;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1327, 643);
+            this.ClientSize = new System.Drawing.Size(1284, 643);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listaDeAspirantesDataGridView1);
@@ -606,6 +649,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeNivelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -655,5 +699,9 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

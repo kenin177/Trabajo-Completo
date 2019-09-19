@@ -45,6 +45,11 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.listaDeAspirantesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.listaDeAspirantesDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.listaDeBuscarbindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,31 +60,26 @@
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listaDeBuscarbindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.listaDeNivelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.listaDeTitulosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.listaDeNivelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listaDeTitulosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listaDeAreasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingNavigator)).BeginInit();
             this.listaDeAspirantesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeBuscarbindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeNivelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeTitulosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // listaDeAspirantesBindingNavigator
@@ -231,6 +231,49 @@
             this.listaDeAspirantesDataGridView1.Size = new System.Drawing.Size(715, 220);
             this.listaDeAspirantesDataGridView1.TabIndex = 2;
             // 
+            // listaDeBuscarbindingSource1
+            // 
+            this.listaDeBuscarbindingSource1.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(342, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "BUSCAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Nivel de Ingles";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.listaDeAreasBindingSource;
+            this.comboBox1.DisplayMember = "Descripcion";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(156, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(155, 21);
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.ValueMember = "Id";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(36, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Area de Trabajo";
+            // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.DataPropertyName = "Id";
@@ -291,53 +334,6 @@
             this.dataGridViewTextBoxColumn26.HeaderText = "Area";
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             // 
-            // listaDeBuscarbindingSource1
-            // 
-            this.listaDeBuscarbindingSource1.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Aspirantes);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(403, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "BUSCAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nivel de Ingles";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataSource = this.listaDeAreasBindingSource;
-            this.comboBox1.DisplayMember = "Descripcion";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(156, 41);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(155, 21);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.ValueMember = "Id";
-            // 
-            // listaDeAreasBindingSource
-            // 
-            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Area de Trabajo";
-            // 
             // comboBox2
             // 
             this.comboBox2.DataSource = this.listaDeNivelBindingSource;
@@ -348,10 +344,6 @@
             this.comboBox2.Size = new System.Drawing.Size(100, 21);
             this.comboBox2.TabIndex = 8;
             this.comboBox2.ValueMember = "Id";
-            // 
-            // listaDeNivelBindingSource
-            // 
-            this.listaDeNivelBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.NivelIngles);
             // 
             // label3
             // 
@@ -405,10 +397,6 @@
             this.comboBox3.TabIndex = 14;
             this.comboBox3.ValueMember = "Id";
             // 
-            // listaDeTitulosBindingSource
-            // 
-            this.listaDeTitulosBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Titulo);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -424,6 +412,18 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 16;
+            // 
+            // listaDeNivelBindingSource
+            // 
+            this.listaDeNivelBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.NivelIngles);
+            // 
+            // listaDeTitulosBindingSource
+            // 
+            this.listaDeTitulosBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Titulo);
+            // 
+            // listaDeAreasBindingSource
+            // 
+            this.listaDeAreasBindingSource.DataSource = typeof(Proyecto_de_RH_Reclutamiento.Modelos.Area);
             // 
             // FrmBusqueda
             // 
@@ -454,9 +454,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeAspirantesDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeBuscarbindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeNivelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeTitulosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeAreasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

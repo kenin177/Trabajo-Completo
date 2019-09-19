@@ -48,5 +48,10 @@ namespace Proyecto_de_RH_Reclutamiento
             listadeFacturasBindingSource.ResetBindings(false);
 
         }
+
+        private void facturaDetalleDataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

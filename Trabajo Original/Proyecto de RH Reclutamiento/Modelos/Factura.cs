@@ -35,12 +35,12 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
         {
             var aspirantesBL = new AspirantesBL();
 
-            double total = 0;
+            double subtotal = 0;
             foreach (var detalle in FacturaDetalle)
             {
                 //var salario = aspirantesBL.ObtenerSalario(detalle.AspiranteId);
 
-                total = total + detalle.CalcularTotalDetalle();
+                subtotal = subtotal + detalle.CalcularTotalDetalle();
             }
 
             double cantidad = 0;
@@ -60,8 +60,8 @@ namespace Proyecto_de_RH_Reclutamiento.Modelos
             //Cantidad Total de comisiones mensual
             SubTotal = comision;
 
-            //Cantidad Total de comisiones en los 3 meses de cada aspirante 
-            Total = total;
+            //Cantidad Total de comisiones sumando los 3 meses
+            Total = SubTotal * 3;
         }
 
     }
